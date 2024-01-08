@@ -37,7 +37,8 @@ jobs:
           ruby-version: 2.7 # Choisissez la version de Ruby correspondant à votre environnement local
       - name: Install specific Bundler version
         run: gem install bundler -v 2.4.19
-
+      - name: Install dependencies
+        run: bundle install
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
