@@ -30,6 +30,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # Caches installed gems automatically
+          ruby-version: 2.7 # Choisissez la version de Ruby correspondant à votre environnement local
+      - name: Install specific Bundler version
+        run: gem install bundler -v 2.4.19
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
