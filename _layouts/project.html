@@ -161,20 +161,7 @@ layout: default
     <div class="columns is-multiline mt-6">
         <div class="column is-9-desktop is-9-tablet">
             <div class="content">
-                <!--{% if page.render-readme %}
-                    {% assign project_url = page.gitlab-link %}
-                    {% assign readme_url = "/-/raw/main/README.md" %}
-                    {% assign final_url = project_url | append: readme_url %}
-                    {% capture mdurl %}
-                        {% remote_include {{ final_url }} %}
-                    {% endcapture %}
-                    {{ mdurl | strip | markdownify }}
-                    
-                    
-                {% else %}-->
                     {{ content }}
-                    
-                <!--{% endif %}-->
             </div>
         </div>
         {% if page.product_toc %}
