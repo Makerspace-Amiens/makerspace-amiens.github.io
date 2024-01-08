@@ -1,0 +1,24 @@
+{% if page.partners %}
+    {% assign partners=site.data.[page.partners] %}
+    <section class="hero {% if partners.height %} {{ partners.height }} {% else %} is-medium {% endif %} {{ partners.style }}">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-multiline is-centered">
+                    {% for partner in partners.items %}
+                        <div class="column is-2 has-text-centered">
+                            {% if partner.image %}
+                            <figure class="image is-fullwidth">
+                                <a  href="{{ partner.link }}"><img src="{{ partner.image }}"></a>
+                            </figure>
+                            {% endif %}
+                            <div class="content is-size-7 is-italic">
+                                <p>{{ partner.subtitle | newline_to_br }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+

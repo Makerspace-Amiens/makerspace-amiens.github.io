@@ -1,0 +1,15 @@
+- label: Menu Principal
+  items:
+    - name: Atelier Capteur
+      link: /pages/ateliers/capteurs
+    - name: Ressources TP
+      link: 
+      items:
+        - name: Introdution capteurs
+          link: /pages/ressources/capteurs
+        - name: Arduino
+          link: /pages/ressources/arduino
+        - name: PlatformIO & VSCode
+          link: /pages/ressources/platformio
+        - name: Le Port-série
+          link: /pages/ressources/port-serie

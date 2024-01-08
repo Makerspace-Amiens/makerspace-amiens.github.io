@@ -1,0 +1,130 @@
+---
+layout: default
+---
+
+<div class="columns is-multiline">
+
+    <div class="column is-1-desktop is-1-tablet is-hidden-mobile"></div>
+
+    <div class="column is-5-desktop is-5-tablet">
+        <div class="box">
+            <figure class="image is-fullwidth">
+                <img class="has-ratio is-fullwidth" width="200" height="360" src="{{ page.image }}" />
+            </figure>
+        </div>
+    </div>
+
+    <div class="column is-5-desktop is-5-tablet">
+        <div class="box">
+            <p class="title is-3">{{ page.title }}</p>
+
+            <div class="content">
+                <p class="subtitle is-6"><span>{{ page.description }}</span></p>
+            </div>
+
+            {% if page.time %}
+                {% include rating.html
+                    title="Durée"
+                    rating=page.time 
+                    icon="time"
+                    align="has-text-left"
+                %}
+            {% endif %}
+
+            {% if page.difficulty %}
+                {% include rating.html
+                    title="Difficulté" 
+                    rating=page.difficulty 
+                    icon="hammer"
+                    align="has-text-left"
+                %}
+            {% endif %}
+
+            <div class="content has-text-left ">
+                <span class="is-size-6 has-text-weight-semibold"> Compatibilité : </span>
+                    {% if page.compatibilities-os contains 'win' %}
+                    <span class="icon"><ion-icon name="logo-windows"></ion-icon></span>
+                    {% endif %}
+                    {% if page.compatibilities-os contains 'mac' %}
+                    <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                    {% endif %}
+                    {% if page.compatibilities-os contains 'lin' %}
+                    <span class="icon"><i class="fab fa-linux"></i></span>
+                    {% endif %}
+            </div>
+
+            {% if page.prerequisites %}
+            <div class="content">
+                <p class="is-size-6 has-text-weight-semibold">Pré-requis :</p>
+                {% for prerequisite in page.prerequisites %}
+                <ul>
+                    {% if prerequisite.link %}
+                        <li><a href="{{ prerequisite.link }}" target="_blank">{{ prerequisite.label }}</a></li>
+                    {% else %}
+                        <li>{{ prerequisite.label }}</li>
+                    {% endif %}
+                </ul>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if page.softwares %}
+            <div class="content">
+                <p class="is-size-6 has-text-weight-semibold">Logiciels :</p>
+                {% for software in page.softwares %}
+                <ul>
+                    {% if software.link %}
+                        <li><a href="{{ software.link }}" target="_blank">{{ software.label }}</a></li>
+                    {% else %}
+                        <li>{{ software.label }}</li>
+                    {% endif %}
+                </ul>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+
+
+            {% if page.todo %}
+            <div class="content">
+                <p class="is-size-6 has-text-weight-semibold">Documentation réalisée à :</p>
+                {% if page.todo <= 25 %}
+                <p><progress class="progress is-danger is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% elsif page.todo <=85 %}
+                <p><progress class="progress is-warning is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% else %}
+                <p><progress class="progress is-success is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    
+        <div class="column is-1-desktop is-1-tablet is-hidden-mobile"></div>
+    </div>
+
+
+    <div class="columns is-multiline mt-6">
+
+        <div class="column is-1-desktop is-1-tablet is-hidden-mobile"></div>
+
+        {% if page.component_toc %}
+        <div class="column is-8-desktop is-8-tablet">
+        {% else %}
+        <div class="column is-10-desktop is-8-tablet">
+        {% endif %}
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+
+        {% if page.component_toc %}
+            <div class="column is-3-desktop is-3-tablet is-hidden-mobile mt-6" style="height:90vh; position: sticky; top: 3.2rem; overflow: auto;">
+                {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+                {% include toc.html html=content class='menu-list' h_min=2 h_max=4 contents_title=contentsTitle %}
+            </div>
+        {% else %}
+            <div class="column is-1-desktop is-1-tablet"></div>
+        {% endif %}
+    </div>
+</div>
+

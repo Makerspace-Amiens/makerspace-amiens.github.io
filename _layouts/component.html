@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+<div class="columns is-multiline">
+
+    <div class="column is-6">
+        <figure class="image is-fullwidth">
+            <img class="has-ratio is-fullwidth" width="200" height="360" src="{{ page.image }}" />
+        </figure>
+    </div>
+
+    <div class="column is-6">
+        <div class="box">
+            <p class="title is-3">{{ page.title }}</p>
+
+            <div class="content">
+                <p class="subtitle is-6"><span>{{ page.description }}</span></p>
+            </div>
+
+            {% if page.rating %}
+                {% include rating.html rating=page.rating %}
+            {% endif %}
+
+            {% if page.features %}
+            <div class="content">
+                {% for feature in page.features %}
+                <p>
+                    <span class="icon">
+                        {% if feature.icon %}
+                        <i class="fas {{ feature.icon }}"></i>
+                        {% else %}
+                        <i class="fas fa-circle fa-xs"></i>
+                        {% endif %}
+                    </span> 
+                    <span>{{ feature.label }}</span></p>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if page.type %}
+            <div class="content">
+                <p class="subtitle is-6"><b>Tag(s) : </b>
+                    <div class="field is-grouped is-grouped-multiline">
+                        {% assign typess = page.type | split: "," %}
+                        {% for type in types %}
+                        <div class="control">
+                            <div class="tag is-rounded is-info">{{ type }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </p>
+            </div>
+            {% endif %}
+
+            {% if page.todo %}
+            <div class="content">
+                <p class="is-size-6 has-text-weight-semibold">Documentation réalisée à :</p>
+                {% if page.todo <= 25 %}
+                <p><progress class="progress is-danger is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% elsif page.todo <=85 %}
+                <p><progress class="progress is-warning is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% else %}
+                <p><progress class="progress is-success is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="columns is-multiline mt-6">
+        <div class="column is-9-desktop is-9-tablet">
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+        {% if page.component_toc %}
+            <div class="column is-3-desktop is-3-tablet is-hidden-mobile mt-6" style="height:90vh; position: sticky; top: 3.2rem; overflow: auto;">
+                {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+                {% include toc.html html=content class='menu-list' h_min=2 h_max=4 contents_title=contentsTitle %}
+            </div>
+        {% endif %}
+    </div>
+
+    {% if site.data.reviews[page.project_code] %}
+    <div class="column is-12">
+        <p class="title is-4">Reviews</p>
+        {% for review in site.data.reviews[page.project_code] %}
+        {% include review.html %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+</div>
+

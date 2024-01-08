@@ -1,0 +1,17 @@
+{% assign pageURL = page.url | split: "/" %}
+{% assign pageUrlSize = pageURL.size | minus: 1 %}
+
+{% for member in pageURL limit: pageUrlSize %}
+    {% capture pageUrlComplete %}{{ pageUrlComplete | append: member }}/{% endcapture %}
+{% endfor %}
+
+{% capture pageUrlComplete %}{{ site.editurl }}{{ pageUrlComplete | append: page.name }}/{% endcapture %}
+
+<div class="is-flex is-align-items-left">
+    {% if page.show_edit %}
+      <a href="{{ pageUrlComplete }}" class="mr-2">
+           <span class="icon is-small editButton" ><i class="fas fa-pen"></i></span>
+      </a>
+    {% endif %}
+</div>
+  

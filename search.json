@@ -1,0 +1,83 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {
+
+      "title"    : "{{ post.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "date"     : "{{ post.date }}"
+
+    }
+    ,
+  {% endfor %}
+
+  {% for page in site.pages %}
+    {
+
+      "title"       : "{{ page.title | escape }}",
+      "subtitle"    : "{{ page.subtitle | escape }}",
+      "url"         : "{{ site.baseurl }}{{ page.url }}",
+      "description" : "{{ page.description | strip_html | strip_newlines | escape  }}",
+      "tags"        : "{{ page.tags | join: ', ' }}"
+      
+    },
+  {% endfor %}
+
+  {% for sensor in site.sensors %}
+    {
+
+      "title"       : "{{ sensor.title | escape }}",
+      "subtitle"    : "{{ sensor.subtitle | escape }}",
+      "url"         : "{{ site.baseurl }}{{ sensor.url }}",
+      "description" : "{{ sensor.description | strip_html | strip_newlines | escape  }}",
+      "tags"        : "{{ sensor.tags | join: ', ' }}"
+      
+    },
+  {% endfor %}
+
+  {% for actuator in site.actuators %}
+    {
+
+      "title"       : "{{ actuator.title | escape }}",
+      "subtitle"    : "{{ actuator.subtitle | escape }}",
+      "url"         : "{{ site.baseurl }}{{ actuator.url }}",
+      "description" : "{{ actuator.description | strip_html | strip_newlines | escape  }}",
+      "tags"        : "{{ actuator.tags | join: ', ' }}"
+      
+    },
+  {% endfor %}
+
+  {% for project in site.projects %}
+    {
+      {% assign areaArray = '' | split: ',' | sort_natural %}
+        {% for area in project.area %}
+          {% if area.check %}
+            {% assign areaArray = areaArray | push: area.label | sort_natural %}
+          {% endif %}
+        {% endfor %}
+
+      "title"       : "{{ project.title | escape }}",
+      "subtitle"    : "{{ project.subtitle | escape }}",
+      "url"         : "{{ site.baseurl }}{{ project.url }}",
+      "description" : "{{ project.description | strip_html | strip_newlines | escape  }}",
+      "tags"        : "{{ project.tags | join: ', ' }}",
+      "area"        : "{{ areaArray | join: ', ' }}"
+      
+    },
+  {% endfor %}
+
+  {% for product in site.products %}
+    {
+
+      "title"       : "{{ product.title | escape }}",
+      "subtitle"    : "{{ product.subtitle | escape }}",
+      "url"         : "{{ site.baseurl }}{{ product.url }}",
+      "description" : "{{ product.description | strip_html | strip_newlines | escape  }}",
+      "tags"        : "{{ product.tags | join: ', ' }}"
+      
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

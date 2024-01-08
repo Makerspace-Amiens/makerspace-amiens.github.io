@@ -1,0 +1,65 @@
+---
+---
+$primary: #ef2e31;
+$link: #ef2e31;
+// Import Main CSS file from theme
+@import "main";
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar-item img {
+    max-height: 2.75rem;
+}
+
+.content table {
+    width: auto;
+}
+.content table td, .content table th, .content table tr{
+    border-top: 1px solid;
+    border-right: 1px solid ;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+
+.editButton {
+    margin-left: 25px;
+}
+
+.footer {
+    padding: 2rem 1.5rem 2rem;
+}
+
+.preview { 
+    display: none; 
+}
+.link:hover .preview { 
+    display: inline-block; 
+    position: absolute; 
+    border: 1px solid black;
+}
+
+.shadow {
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+
+.field-body {
+    flex-grow: 2;
+}
+
+/*
+img[alt$="-hover"] {
+    //display: none;
+    position: absolute;
+    content: attr(alt);
+    color: #333;
+    
+}
+
+img[alt$="-hover"]:hover {
+    display: inline-block;
+    position: absolute;
+    border: 1px solid black;
+ }
+ */
+

@@ -1,0 +1,231 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<!-- Style pour l'affichage en onglet -->
+<style>
+    #tabs-with-content .tabs:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    #tabs-with-content .tab-content {
+        padding: 1rem;
+        display: none;
+    }
+
+    #tabs-with-content .tab-content.is-active {
+        display: block;
+    }
+</style>
+
+<!-- Récupere la liste des projets -->
+{% assign sorted_projects = site.projects | sort:page.sort %}
+
+<!-- Défini la liste des tags "Domaine" (area) -->
+{% assign listAreas = "Application mobile, Développement durable, Développement Web, Electronique, Mécanique, Objets connectés, Programmation, Robotique" | split: ", " %}
+
+<!-- Défini la liste des catégories -->
+{% assign listCategories = "MakerSpace, Projets I3 2024, Projets I3 2023, Projets I3 2022, Archivés" | split: ", " %}
+
+<!-- CONTENT -->
+
+<!-- Affichage par onglet -->
+
+<!-- Affiche les différents onglets-->
+<div id="tabs-with-content">
+    <div class="tabs is-centered">
+        <ul>
+            {% for category in listCategories %}
+                <li><a>{{ category }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Affiche le contenu des différents onglets-->
+    <div>
+        {% for category in listCategories %}
+        <section class="tab-content">
+
+            <!-- Recupère la liste des tags "Domaine" (area) de la catégorie seulement ainsi que le nombre de projet ouverts et fermés-->
+
+            {% assign open = 0 %}
+            {% assign close = 0 %}
+            {% assign student = 0 %}
+
+            {% assign areaArray = '' | split: ',' | sort_natural %}
+
+            {% for project in sorted_projects %}
+                {% for project_category in project.categories %}
+                    {% if project_category.check %}
+                        {% if project_category.label == category%}
+                            {% assign areas = project.area | split: "," %}
+                            {% for area in areas %}
+                                {% assign areaArray = areaArray | push: area | sort_natural %}
+                            {% endfor %}
+                            {% if project.empty_group %}
+                                {% assign open = open | plus: 1 %}
+                            {% else %}
+                                {% assign close = close | plus: 1 %}
+                            {% endif %}
+                            {% if project.student_project %}
+                                {% assign student = student | plus: 1 %}
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+            {% assign uniqAreas = areaArray | uniq %}
+        
+            <!-- Afficher les domaines -->
+
+            <div class="content">
+                <p class="subtitle is-6"><b>Domaine(s) dans cette catégorie : </b>
+                    <div class="field is-grouped is-grouped-multiline">
+                        {% for area in uniqAreas %}
+                            <div class="control">
+                                <div class="tag is-rounded is-medium is-info is-light">{{ area }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </p>
+            </div>
+
+            <!-- Affiche la legende -->
+
+            <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-dark"><span class="icon has-text-warning"><i class="fas fa-lock-open" title="Il reste des places"></i></span></span>
+                    <span class="tag is-warning is-light is-rounded"><strong>{{ open }}</strong>&nbsp;projet(s) ouvert(s)</span>
+                  </div>
+                </div>
+              
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-dark"><span class="icon has-text-danger"><i class="fas fa-lock" title="Le projet est complet"></i></span></span>
+                    <span class="tag is-success is-light is-rounded"><strong>{{ close }}</strong>&nbsp;projet(s) complet(s)</span>
+                  </div>
+                </div>
+
+                <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag is-dark"><span class="icon has-text-info"><i class="fas fa-graduation-cap" title="Projet proposé par des étudiants"></i></span></span>
+                      <span class="tag is-info is-light is-rounded"><strong>{{ student }}</strong>&nbsp;projet(s) étudiant(s)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afficher les cartes de contenu -->
+
+            <div class="columns is-multiline">
+                {% for project in sorted_projects %}
+                    {% for project_category in project.categories %}
+                        {% if project_category.check %}
+                            {% if project_category.label == category%}
+                                {% assign display = true %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+
+                {% if display == true %}
+                <div class="column is-4-desktop is-6-tablet">
+                    <a href="{{ project.url | relative_url }}">
+                        {% if project.empty_group %}
+                        <div class="card has-background-warning-light">
+                            {% else %}
+                            <div class="card has-background-success-light">
+                                {% endif %}
+                                {% if project.image %}
+                                {% capture image-url %}{{ site.baseurl }}{{ project.url }}{{ project.image }}{%
+                                endcapture %}
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="{{ image-url }}" alt="{{ project.title }}" />
+                                    </figure>
+                                </div>
+                                {% else %}
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="{{ site.imgurl }}/no-image.png" alt="{{ project.title }}" />
+                                    </figure>
+                                </div>
+                                {% endif %}
+                                <div class="card-content">
+                                    <span class="icon-text">
+                                        <!-- En attente -->
+                                        <!--
+                                        {% if project.empty_group %}
+                                            <span class="icon has-text-warning "><i class="fas fa-lock-open" title="Il reste des places"></i></span>
+                                        {% else %}
+                                            <span class="icon has-text-danger"><i class="fas fa-lock" title="Le projet est complet"></i></span>
+                                        {% endif %}
+                                        -->
+                                        <span class="title is-4">{{ project.title }}</span>
+                                        {% if project.student_project %}
+                                            <span class="title is-4"> - </span>
+                                            <span class="icon"><i class="fas fa-graduation-cap" title="Projet proposé par des étudiants"></i></span>
+                                        {% endif %}
+                                    </span>
+                                    <p class="subtitle is-6">{{ project.subtitle | truncate: 60 }}</p>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+                {% assign display = false %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<!-- Script JS de charegement dans la meme page des différents contenus anvant affichage en onglet -->
+
+<script>
+    let tabsWithContent = (function () 
+    {
+        let tabs = document.querySelectorAll('.tabs li');
+        let tabsContent = document.querySelectorAll('.tab-content');
+
+        let deactvateAllTabs = function () 
+        {
+            tabs.forEach(function (tab) {
+                tab.classList.remove('is-active');
+            });
+        };
+
+        let hideTabsContent = function () 
+        {
+            tabsContent.forEach(function (tabContent) {
+                tabContent.classList.remove('is-active');
+            });
+        };
+
+        let activateTabsContent = function (tab) 
+        {
+            tabsContent[getIndex(tab)].classList.add('is-active');
+        };
+
+        let getIndex = function (el) 
+        {
+            return [...el.parentElement.children].indexOf(el);
+        };
+
+        tabs.forEach(function (tab) 
+        {
+            tab.addEventListener('click', function () {
+                deactvateAllTabs();
+                hideTabsContent();
+                tab.classList.add('is-active');
+                activateTabsContent(tab);
+            });
+        })
+
+        tabs[0].click();
+    })();
+
+</script>

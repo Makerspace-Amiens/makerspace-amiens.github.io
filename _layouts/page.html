@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% if page.translator %}
+
+    {% assign filename = page.name | split: "." %}
+    {% assign file_to_include_fr = filename[0] | append: '_fr.md' %}
+    {% assign file_to_include_en = filename[0] | append: '_en.md' %}
+
+    {% capture frcontent %}
+        {% include_relative {{ file_to_include_fr  }} %}
+    {% endcapture %}
+
+    {% capture encontent %}
+        {% include_relative {{ file_to_include_en  }} %}
+    {% endcapture %}
+
+    <div class="field">
+        <input id="switchLang" type="checkbox" name="switchLang" class="switch is-rounded is-small" >
+          <label for="switchLang"><i>Translate this page in English</i></label>
+    </div>
+
+    <div class="content">
+        <div id="english" style="display:none;">
+            {{ encontent | markdownify }}
+        </div>
+    
+        <div id="french">
+            {{ frcontent | markdownify }}
+        </div>
+    </div>
+
+{% else %}
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+{% endif %}

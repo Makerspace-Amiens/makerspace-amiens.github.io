@@ -1,0 +1,81 @@
+- name: Informations
+  link: /pages/informations
+  dropdown:
+  - name: Le MakerSpace
+    link: /pages/informations
+  - name: Blog
+    link: /blog
+  - name: Revue de Presse
+    link: /pages/revue-de-presse
+  - name: Reservations
+    link: https://outlook.office365.com/owa/calendar/MakerspaceUniLaSalleAmiens@cloudlasalle.onmicrosoft.com/bookings/
+- name: Les projets
+  link: /pages/projets/projets
+- name: Documentation
+  link: 
+  dropdown:
+    - name: Materiel
+      link: /pages/machines
+    - name: Logiciels
+      link: /pages/softs
+    - name: Mécanismes
+      link: /pages/mecanismes
+    - name: Capteurs
+      link: /pages/capteurs
+    - name: Actionneurs
+      link: /pages/actionneurs
+    - name: Outils du site
+      link: /pages/aide-documentation/ref-outils-site
+- name: Tutoriels
+  link: 
+  dropdown:
+    - name: Conception 3D
+      link: /pages/tutoriels-cao
+    - name: Conception 3D (English)
+      link: /pages/tutoriels-cao-en
+    - name: Documentation
+      link: /pages/tutoriels-documentation
+    - name: Capteurs
+      link: /pages/ateliers/capteurs
+    - name: Python
+      link: /pages/softs/python/introduction-python
+- name: Les outils
+  link: 
+  dropdown:
+    - name: Centre de documentation
+      link: https://cloudlasalle.sharepoint.com/sites/centre-de-documentation
+    - name: Dimensionnement de moteurs
+      link: /pages/calculateur-moteur-robot
+    - name: Simulateur Arduino
+      link: https://wokwi.com
+    - name: Generateur d'effet NeoPixel
+      link: https://adrianotiger.github.io/Neopixel-Effect-Generator/
+    - name: Build List
+      link: https://buildlist.org
+    - name: With Diode
+      link: https://www.withdiode.com
+    - name: CAD Assistant
+      link: https://www.opencascade.com/products/cad-assistant/
+    - name: Pinion KiCAD
+      link: https://yaqwsx.github.io/Pinion/
+    - name: sheetplus Ai
+      link: https://sheetplus.ai
+    - name: 3D print Quality Troubleshooting
+      link: https://www.simplify3d.com/resources/print-quality-troubleshooting/
+    - name: Trace Pixels To Vectors in Full Color
+      link: https://vectorizer.ai
+    - name: Calcul de couple pour systèmes 
+      link: https://www.nidec.com/en/product/calc/torque/
+    - name: Motiongen.io - Simulation de mécanismes
+      link: https://motiongen.io/app
+    - name: PDF Sam - utilitaire pour éditer des PDF
+      link: https://pdfsam.org
+    - name: Signature PDF
+      link: https://pdf.24eme.fr/signature
+    - name: RoboCup kit
+      link: https://robot-soccer-kit.github.io
+    - name: Tutos de CAO FreeCAD
+      link: https://lachiver.fr/Accueil/co/siteWeb.html
+    - name: Wurth Elektronik tool
+      link: https://redexpert.we-online.com/we-redexpert/en/#/home
+      

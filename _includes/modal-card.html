@@ -1,0 +1,30 @@
+<div class="columns">
+    <div class="column">
+        <div x-data="{ open: false }">
+            <a @click="open = true" title="View large image">
+                <figure class="button"> Click me !
+                    <img src="{{ include.link | absolute_url }}" alt="{{ include.alt }}">
+                </figure>
+            </a>
+            <div class="modal" :class="{ 'is-active': open }">
+                <div class="modal-background" @click="open = false"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                    <p class="modal-card-title">{{ include.title}}</p>
+                    <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        {% if include.content %}
+                            {{ include.content | markdownify }}
+                        {% endif %}
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button class="modal-close is-large" aria-label="close" @click="{ open = false }"></button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

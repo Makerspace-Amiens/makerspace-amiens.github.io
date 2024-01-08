@@ -1,0 +1,7 @@
+style: is-dark
+height: is-small
+items:
+  - title: Région haut de France
+    subtitle: Le MakerSpace Bénéficie du soutien financier de la Région Hauts-de-France
+    image: img/RegionHDF.jpg
+    link: https://www.hautsdefrance.fr

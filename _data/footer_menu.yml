@@ -1,0 +1,6 @@
+- name: Accueil
+  link: /
+- name: Informations
+  link: /pages/informations
+- name: Blog
+  link: /blog/

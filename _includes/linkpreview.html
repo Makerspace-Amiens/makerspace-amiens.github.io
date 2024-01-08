@@ -1,0 +1,15 @@
+    <div class="card-image">
+      <figure class="image is-fullwidth">
+        <img src="{{ link_image }}" alt="{{ link_description }}">
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-4"><a href="{{ link_url }}">{{ link_title | truncate: 40 }}</a></p>
+        </div>
+      </div>
+      <div class="content">
+        {{ link_description | truncate: 60 }}
+      </div>
+    </div>
