@@ -1,5 +1,5 @@
 ---
-project_number: 23
+project_number: 
 hero_image: LD0005392646_2.jpg
 hero_darken: true
 layout: project
@@ -23,7 +23,7 @@ tutor:
   year: 2024
 
 student:
-  - label: : GRULIER Baptiste
+  - label: GRULIER Baptiste
     mail: '@unilasalle.fr'
     year: 2024
   - label: LE MOULLEC Jeremy
