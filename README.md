@@ -19,4 +19,4 @@ Un atelier peut être organisé chaque semaine (perfectionnement, initiation, d�
 
 Le reste de la semaine est dédié aux créneaux de TP et projets associés au Makerspace.
 
-[Accéder au site](makerspace-amiens.fr)
+[Accéder au site](https://makerspace-amiens.fr)
