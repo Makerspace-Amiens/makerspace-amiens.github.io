@@ -7,8 +7,6 @@
         link: /pages/informations
       - name: Blog
         link: /blog
-      - name: Revue de Presse
-        link: /pages/revue-de-presse
       - name: Reservations
         link: https://outlook.office365.com/owa/calendar/MakerspaceUniLaSalleAmiens@cloudlasalle.onmicrosoft.com/bookings/
     - name: Les projets
@@ -22,10 +20,6 @@
           link: /pages/softs
         - name: Mécanismes
           link: /pages/mecanismes
-        - name: Capteurs
-          link: /pages/capteurs
-        - name: Actionneurs
-          link: /pages/actionneurs
         - name: Outils du site
           link: /pages/aide-documentation/ref-outils-site
     - name: Tutoriels
