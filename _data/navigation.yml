@@ -25,6 +25,8 @@
   dropdown:
     - name: Conception 3D
       link: /pages/tutoriels-cao
+    - name: Impression 3D
+      link: /pages/tutoriels-impression-3d
     - name: Conception 3D (English)
       link: /pages/tutoriels-cao-en
     - name: Documentation
