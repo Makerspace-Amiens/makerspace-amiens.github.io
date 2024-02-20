@@ -23,6 +23,6 @@ group :jekyll_plugins do
     gem "jekyll-pdf-embed"
     gem 'wdm', '~> 0.1.1', :install_if => Gem.win_platform?
     gem "jekyll-linkpreview"
-    gem 'jekyll-remote-include', :github => 'UriShX/jekyll-remote-include', :branch => 'context-variables'
+    gem 'jekyll-remote-include', :github => 'UriShX/jekyll-remote-include', :branch => 'master'
 end
 gem "webrick", "~> 1.8"
