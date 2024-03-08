@@ -10,7 +10,12 @@
       - name: Reservations
         link: https://outlook.office365.com/owa/calendar/MakerspaceUniLaSalleAmiens@cloudlasalle.onmicrosoft.com/bookings/
     - name: Les projets
-      link: /pages/projets/projets
+      link:
+      items:
+        - name: Projets I3
+          link: /pages/projets/projets
+        - name: Projets GEB
+          link: /pages/projets/projets-geb
     - name: Documentation
       link: 
       items:

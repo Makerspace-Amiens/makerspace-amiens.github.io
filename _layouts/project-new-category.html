@@ -20,7 +20,7 @@ show_sidebar: false
 </style>
 
 <!-- Récupere la liste des projets -->
-{% assign sorted_projects = site.projects | sort:page.sort %}
+{% assign sorted_projects = site.projets | sort:page.sort %}
 
 <!-- Défini la liste des tags "Domaine" (area) -->
 {% assign listAreas = "Application mobile, Développement durable, Développement Web, Electronique, Mécanique, Objets connectés, Programmation, Robotique" | split: ", " %}

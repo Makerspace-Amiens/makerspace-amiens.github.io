@@ -88,7 +88,7 @@ collections:
     layout: product
     image: https://via.placeholder.com/800x600
     show_sidebar: false
-  projects: 
+  projets: 
     output: true
     layout: project
     image: https://via.placeholder.com/800x600

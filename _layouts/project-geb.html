@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<div class="columns is-multiline">
+
+    <div class="column is-6">
+        <model-viewer src="ExempleMaison_1_200.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+            </div>
+        </model-viewer>
+    </div>
+
+    <div class="column is-6">
+        <div class="box">
+            <p class="title is-3">Projet - {{ page.title }} </p>
+
+            <div class="content">
+                <p class="subtitle is-6"><span>{{ page.description }}</span></p>
+            </div>
+
+            {% if page.tutor %}
+            <div class="content">
+                <p class="subtitle is-6">
+                    <b>Tuteur(s)</b>
+                    {% for tutor in page.tutor %}
+                        <b>-</b>
+                        <a href="mailto:{{ tutor.mail }}">{{ tutor.label }} {% if tutor.year %} ( {{ tutor.year }} ) {% endif %}</a>
+                    {% endfor %}
+                </p>
+            </div>
+            {% endif %}
+            
+
+            {% if page.student %}
+            <div class="content">
+                <p class="subtitle is-6">
+                    <b>Etudiant(s)</b>
+                    {% for student in page.student %}
+                        <b>-</b>
+                        <a href="mailto:{{ student.mail }}">{{ student.label }} {% if student.year %} ( {{ student.year }} ) {% endif %}</a>
+                    {% endfor %}
+                </p>
+            </div>
+            {% endif %}
+
+            {% if page.scale %}
+            <div class="content">
+                <p class="subtitle is-6">
+                    <b>Echelle: </b><a href="">{{ page.scale }} </a>
+                </p>
+            </div>
+            {% endif %}
+
+            {% if page.soft %}
+            <div class="content">
+                <p class="subtitle is-6"><b>Logiciel(s) : </b>
+                        {% assign softs = page.soft | split: "," %}
+                        {% for soft in softs %}
+                        <a>{{ soft }}</a>
+                        {% endfor %}
+                </p>
+            </div>
+            {% endif %}
+
+            <div class="content">
+                <p class="subtitle is-6">
+                    <a href="{{ page.file }}"><button class="button is-rounded is-warning"> Télécharger le modèle </button></a>
+                </p>
+            </div>
+
+            {% if page.todo %}
+            <div class="content">
+                <p class="is-size-6 has-text-weight-semibold">Documentation réalisée à :</p>
+                {% if page.todo <= 25 %}
+                <p><progress class="progress is-danger is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% elsif page.todo <=85 %}
+                <p><progress class="progress is-warning is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% else %}
+                <p><progress class="progress is-success is-medium mt-4" value="{{ page.todo }}" max="100">{{ page.todo }}</progress></p>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="columns is-multiline mt-6">
+        <div class="column is-9-desktop is-9-tablet">
+            <div class="content">
+                    {{ content }}
+            </div>
+        </div>
+    </div>
+</div>

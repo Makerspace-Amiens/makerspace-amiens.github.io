@@ -50,7 +50,7 @@
     },
   {% endfor %}
 
-  {% for project in site.projects %}
+  {% for project in site.projets %}
     {
       {% assign areaArray = '' | split: ',' | sort_natural %}
         {% for area in project.area %}
