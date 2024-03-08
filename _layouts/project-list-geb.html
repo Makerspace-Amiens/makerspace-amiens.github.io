@@ -4,6 +4,10 @@ show_sidebar: false
 ---
 <!-- Récupère la liste des projets -->
 {% assign sorted_projects = site.projets | sort:page.sort %}
+
+<div class="content" >
+    {{ content }}
+</div>
 <!-- Afficher les cartes de contenu -->
 <section class="tab-content">
     <div class="columns is-multiline">
