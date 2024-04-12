@@ -2,13 +2,8 @@
   items:
     - name: Informations
       link: /pages/informations
-      items:
-      - name: Le MakerSpace
-        link: /pages/informations
-      - name: Blog
-        link: /blog
-      - name: Reservations
-        link: https://outlook.office365.com/owa/calendar/MakerspaceUniLaSalleAmiens@cloudlasalle.onmicrosoft.com/bookings/
+    - name: Blog
+      link: /blog
     - name: Les projets
       link:
       items:
@@ -16,17 +11,8 @@
           link: /pages/projets/projets
         - name: Projets GEB
           link: /pages/projets/projets-geb
-    - name: Documentation
-      link: 
-      items:
-        - name: Materiel
-          link: /pages/machines
-        - name: Logiciels
-          link: /pages/softs
-        - name: Mécanismes
-          link: /pages/mecanismes
-        - name: Outils du site
-          link: /pages/aide-documentation/ref-outils-site
+    - name: Machines
+      link: /pages/machines
     - name: Tutoriels
       link: 
       items:
@@ -34,6 +20,4 @@
           link: /pages/tutoriels-cao
         - name: Conception 3D (English)
           link: /pages/tutoriels-cao-en
-        - name: Documentation
-          link: /pages/tutoriels-documentation
         
