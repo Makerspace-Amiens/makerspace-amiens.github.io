@@ -11,9 +11,6 @@
       link: /pages/projets/projets-geb
 - name: Materiel
   link: /pages/machines
-  dropdown:
-    - name: Outils du site
-      link: /pages/aide-documentation/ref-outils-site
 - name: Tutoriels
   link: 
   dropdown:
