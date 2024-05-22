@@ -16,6 +16,7 @@ empty_group: true
 state_new: false
 area: Electronique,Mécanique,Programmation
 soft: FreeCAD,Solidworks,Fusion 360,Cura,Inkscape,KiCAD
+site-projet: https://makerspace-amiens.fr/2024-RCLandYacht/
 
 tutor:
 - label: Adrien BRACQ

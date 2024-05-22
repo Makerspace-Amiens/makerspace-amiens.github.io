@@ -41,13 +41,13 @@ categories:
   - label: MakerSpace
     check: false
   - label: Projets I3 2024
-    check: true
+    check: false
   - label: Projets I3 2023
     check: false
   - label: Projets I3 2022
     check: false
   - label: Archivés
-    check: false
+    check: true
 
 area: Mécanique,Programmation
 

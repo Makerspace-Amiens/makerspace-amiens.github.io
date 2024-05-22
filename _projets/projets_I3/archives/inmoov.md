@@ -39,7 +39,7 @@ categories:
   - label: MakerSpace
     check: true
   - label: Projets I3 2024
-    check: true
+    check: false
   - label: Projets I3 2023
     check: true
   - label: Projets I3 2022

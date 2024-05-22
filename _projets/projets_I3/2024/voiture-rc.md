@@ -82,6 +82,7 @@ categories:
 area: Electronique,Mécanique,Programmation
 
 soft: Arduino IDE,Fusion 360,VSCode,PlatformIO,KiCAD
+site-projet: http://makerspace-amiens.fr/2024-RCMiniCar/
 
 ---
 

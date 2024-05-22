@@ -16,6 +16,7 @@ empty_group: true
 state_new: true
 area: Développement durable,Electronique,Mécanique,Programmation
 soft: FreeCAD,Solidworks,Fusion 360,Cura,Inkscape
+site-projet: http://makerspace-amiens.fr/2024-MiniFactoryModel/
 
 tutor:
 - label: Adrien BRACQ

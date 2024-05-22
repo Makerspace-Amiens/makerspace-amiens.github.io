@@ -9,6 +9,7 @@ product_toc: true
 title: reacTable 
 subtitle: Une table réactive pour des applications tangibles
 description: Créer une table interactive en utilisant des elements tangibles et le framework reacTIVision
+site-projet: https://makerspace-amiens.fr/2024-InteractiveTable/
 
 tags: 
 

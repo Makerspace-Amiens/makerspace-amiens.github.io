@@ -49,6 +49,7 @@ categories:
 area: Electronique,Mécanique,Programmation,Robotique
 
 soft: Arduino IDE,Fusion 360,Solidworks,VSCode,PlatformIO,KiCAD
+site-projet: https://unimakers.fr/Docs-Unimakers-CDR-2024/
 
 ---
 ## Contexte et description du projet  :

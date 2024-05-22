@@ -5,8 +5,12 @@
 - name: Les projets
   link: 
   dropdown:
-    - name: Projets I3
-      link: /pages/projets/projets
+    - name: Projets I3 - 2024
+      link: /pages/projets/projets-2024
+    - name: Projets I3 - 2023
+      link: /pages/projets/projets-2023
+    - name: Projets I3 - 2022
+      link: /pages/projets/projets-2022
     - name: Projets GEB
       link: /pages/projets/projets-geb
 - name: Materiel

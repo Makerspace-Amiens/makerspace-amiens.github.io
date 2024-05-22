@@ -49,6 +49,7 @@ categories:
 area: Electronique,Mécanique,Programmation,Objets connectés
 
 soft: FreeCAD,Solidworks,Fusion 360,Cura,Inkscape
+site-projet: http://makerspace-amiens.fr/2024-VRFlightSimulator/
 
 ---
 ## Présentation : 

@@ -52,6 +52,7 @@ categories:
 area: Mécanique,Programmation
 
 soft: VsCode,FreeCAD,Fusion360,OnShape
+site-projet: http://makerspace-amiens.fr/2024-DrawBot/
 
 ---
 ## Contexte et description du projet  
