@@ -12,7 +12,7 @@ description: Concevoir et fabriquer un char à voile RC facilement reproductible
 
 tags: 
 multi-group: false
-empty_group: true
+empty_group: false
 state_new: false
 area: Electronique,Mécanique,Programmation
 soft: FreeCAD,Solidworks,Fusion 360,Cura,Inkscape,KiCAD

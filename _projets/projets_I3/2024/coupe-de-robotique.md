@@ -52,7 +52,7 @@ soft: Arduino IDE,Fusion 360,Solidworks,VSCode,PlatformIO,KiCAD
 site-projet: https://unimakers.fr/Docs-Unimakers-CDR-2024/
 
 ---
-## Contexte et description du projet  :
+## Contexte et description du projet :
 
 ![](2021-09-10-17-30-08.png)
 

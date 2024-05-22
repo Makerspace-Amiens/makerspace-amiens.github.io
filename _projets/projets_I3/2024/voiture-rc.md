@@ -63,7 +63,7 @@ student:
     mail: '@unilasalle.fr'
     year: 2022
 
-empty_group: true
+empty_group: false
 
 state_new: false
 

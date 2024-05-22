@@ -34,7 +34,7 @@ student:
     mail: '@unilasalle.fr'
     year: 2023
 
-empty_group: true
+empty_group: false
 
 state_new: false
 

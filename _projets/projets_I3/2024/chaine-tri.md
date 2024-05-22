@@ -6,13 +6,13 @@ layout: project
 image: 2022-12-13-14-01-12.png
 product_toc: true
 
-title: La Malle Pédagogique
+title: Chaîne de tri pédagogique
 subtitle: Des ateliers pour faire découvrir nos formations
 description: 
 
 tags: 
 multi-group: false
-empty_group: true
+empty_group: false
 state_new: true
 area: Développement durable,Electronique,Mécanique,Programmation
 soft: FreeCAD,Solidworks,Fusion 360,Cura,Inkscape
