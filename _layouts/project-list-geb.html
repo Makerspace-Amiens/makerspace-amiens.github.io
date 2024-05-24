@@ -10,10 +10,10 @@ show_sidebar: false
 </div>
 
 <!-- Boutton pour Afficher les cartes de contenu -->
-<button id="toggleProjects" class="button is-info">Afficher les projets</button>
+<!-- <button id="toggleProjects" class="button is-info">Afficher les projets</button> -->
 
 <!-- Afficher les cartes de contenu -->
-<section class="tab-content is-hidden" id="projectsSection">
+<section class="tab-content " id="projectsSection">
     <div class="columns is-multiline">
         {% for project in sorted_projects %}
         {% if project.geb == true %}
@@ -49,6 +49,7 @@ show_sidebar: false
 </section>
 
 <!-- Script d'affichage ou masquage des projets -->
+<!--
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('toggleProjects').addEventListener('click', function () {
@@ -58,3 +59,4 @@ show_sidebar: false
         });
     });
 </script>
+-->
