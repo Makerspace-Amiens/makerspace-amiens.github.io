@@ -1,9 +1,9 @@
 ---
 project_number: 23
-hero_image: 2022-12-13-14-01-12.png
+hero_image: shared image.jpg
 hero_darken: true
 layout: project
-image: 2022-12-13-14-01-12.png
+image: shared image.jpg
 product_toc: true
 
 title: Chaîne de tri pédagogique
