@@ -1,9 +1,9 @@
 ---
 project_number: 
-hero_image: LD0005392646_2.jpg
+hero_image: poster_jdp.jpg
 hero_darken: true
 layout: project
-image: LD0005392646_2.jpg
+image: poster_jdp.jpg
 product_toc: true
 
 title: Simulateur de vol VR

@@ -1,9 +1,9 @@
 ---
 project_number:
-hero_image: opera_20240104_175225.png
+hero_image: Poster_poli.jpg
 hero_darken: true
 layout: project
-image: opera_20240104_175225.png
+image: Poster_poli.jpg
 product_toc: true
 
 title: Polisseuse 3D 

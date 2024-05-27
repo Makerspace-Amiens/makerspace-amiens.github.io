@@ -1,9 +1,9 @@
 ---
 project_number:
-hero_image: NewImage27.png
+hero_image: imagesketch.png
 hero_darken: true
 layout: project
-image: NewImage27.png
+image: imagesketch.png
 product_toc: true
 
 title: Drawbot

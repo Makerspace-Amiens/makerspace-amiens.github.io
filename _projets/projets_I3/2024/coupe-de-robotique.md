@@ -1,9 +1,9 @@
 ---
 project_number: 23
-hero_image: 2022-11-28-15-51-19.png
+hero_image: RobotDevantwide.jpg
 hero_darken: true
 layout: project
-image: vignette.png
+image: RobotDevantwide.jpg
 product_toc: true
 
 title: Coupe de France de Robotique
@@ -54,7 +54,7 @@ site-projet: https://unimakers.fr/Docs-Unimakers-CDR-2024/
 ---
 ## Contexte et description du projet :
 
-![](2021-09-10-17-30-08.png)
+![](RobotDevantwide.jpg)
 
 La Coupe de France de Robotique est un défi ludique, scientifique et technique de robotique amateur qui s’adresse à des équipes de jeunes (18-30 ans) passionné(e)s de la robotique ou ayant des projets éducatifs vers les jeunes. Les équipes doivent être constituées de plusieurs personnes. Cette rencontre permet de nombreux échanges de savoirs et savoir-faire entre les participant·e·s.
 
