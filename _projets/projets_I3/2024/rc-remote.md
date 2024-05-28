@@ -1,9 +1,9 @@
 ---
 project_number: 26
-hero_image: rc1-300x225.jpg
+hero_image: IMG_0184-removebg-preview.png
 hero_darken: true
 layout: project
-image: rc1-300x225.jpg
+image: IMG_0184-removebg-preview.png
 product_toc: true
 
 title: Télécommande multi-projet
