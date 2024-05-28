@@ -37,7 +37,7 @@ categories:
   - label: Projets I3 2024
     check: false
   - label: Projets I3 2023
-    check: true
+    check: false
   - label: Projets I3 2022
     check: false
   - label: Archivés
