@@ -6,7 +6,7 @@ layout: project
 image: RobotDevantwide.jpg
 product_toc: true
 
-title: Coupe de France de Robotique
+title: Coupe de France de Robotique 2024 - I3
 subtitle: La plus grande compétition de robotique Européenne 
 description: Concevoir et fabriquer un robot pour participer à la coupe de France de robotique
 
@@ -35,7 +35,7 @@ empty_group: false
 state_new: false
 
 categories:
-  - label: MakerSpace
+  - label: Robotique 2024
     check: true
   - label: Projets I3 2024
     check: true

@@ -7,13 +7,15 @@
     - name: Les projets
       link:
       items:
+        - name: Robotique - 2024
+          link: /pages/projets/robotique-2024
         - name: Projets I3 - 2024
           link: /pages/projets/projets-2024
         - name: Projets I3 - 2023
           link: /pages/projets/projets-2023
         - name: Projets I3 - 2022
           link: /pages/projets/projets-2022
-        - name: Projets GEB
+        - name: Projets GEB - 2024
           link: /pages/projets/projets-geb
     - name: Machines
       link: /pages/machines
