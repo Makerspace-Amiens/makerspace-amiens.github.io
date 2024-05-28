@@ -1,12 +1,12 @@
 ---
 project_number: 23
-hero_image: DSC08210.jpg
+hero_image: P1080089.jpg
 hero_darken: true
 layout: project
-image: DSC08210.jpg
+image: P1080089.jpg
 product_toc: true
 
-title: Coupe de France de Robotique 2024 - I2
+title: Coupe de France de Robotique 2024 - I4
 subtitle: La plus grande compétition de robotique Européenne 
 description: Concevoir et fabriquer un robot pour participer à la coupe de France de robotique
 
@@ -15,14 +15,17 @@ tags: robotique,robot,club,association,coupe
 tutor:
 - label: Adrien BRACQ
   mail: 'adrien.bracq@unilasalle.fr'
-  year: 2023
+  year: 2024
 
 multi-group: false
 student_project: true
 
 student:
-  - label: etudiant
-    mail: 'etu@etu.unilasalle.fr'
+  - label: Remi LACOMBE
+    mail: 'lacombe.remi@etu.unilasalle.fr'
+    year: 2024
+  - label: Yassine AMAGHZAZ
+    mail: 'yassine.amaghzaz@etu.unilasalle.fr'
     year: 2024
 
 empty_group: false
@@ -34,7 +37,7 @@ categories:
   - label: Projets I3 2024
     check: false
   - label: Projets I3 2023
-    check: false
+    check: true
   - label: Projets I3 2022
     check: false
   - label: Archivés
@@ -43,7 +46,7 @@ categories:
 area: Electronique,Mécanique,Programmation,Robotique
 
 soft: Arduino IDE,Fusion 360,Solidworks,VSCode,PlatformIO,KiCAD
-site-projet: https://unimakers.fr/CDR-2024-I2-RATP/
+site-projet: https://github.com/amaghzaz-y/CDR-23
 
 ---
 ## Contexte et description du projet :

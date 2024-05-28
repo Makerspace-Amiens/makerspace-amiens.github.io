@@ -1,12 +1,12 @@
 ---
 project_number: 23
-hero_image: DSC08210.jpg
+hero_image: DSC08112.jpg
 hero_darken: true
 layout: project
-image: DSC08210.jpg
+image: DSC08112.jpg
 product_toc: true
 
-title: Coupe de France de Robotique 2024 - I2
+title: Coupe de France de Robotique 2024 - I1
 subtitle: La plus grande compétition de robotique Européenne 
 description: Concevoir et fabriquer un robot pour participer à la coupe de France de robotique
 
@@ -43,7 +43,7 @@ categories:
 area: Electronique,Mécanique,Programmation,Robotique
 
 soft: Arduino IDE,Fusion 360,Solidworks,VSCode,PlatformIO,KiCAD
-site-projet: https://unimakers.fr/CDR-2024-I2-RATP/
+site-projet: https://unimakers.fr
 
 ---
 ## Contexte et description du projet :
