@@ -15,8 +15,10 @@
           link: /pages/projets/projets-2023
         - name: Projets I3 - 2022
           link: /pages/projets/projets-2022
-        - name: Projets GEB - 2024
+        - name: GEB I2 - 2024
           link: /pages/projets/projets-geb
+        - name: ITEC I2 - 2024
+          link: /pages/projets/projets-I2-2024
     - name: Machines
       link: /pages/machines
     - name: Tutoriels

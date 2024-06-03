@@ -1,12 +1,18 @@
-
-    <div class="card-content">
-      <div class="media">
-        <div class="media-content">
-          <p class="title is-4"><a href="{{ link_url }}">{{ link_title | truncate: 40 }}</a></p>
+  <div class="column is-4-desktop is-6-tablet">
+    <a href="{{ link_url }}">
+      <div class="card has-background-success-light">
+        <div class="card-image">
+          <div class="card-image-container">
+            <a href="{{ link_url }}"><img src="https://picsum.photos/300/150/?grayscale&blur=2.jpg" alt="{{ link_description }}" class="landscape" /></a>
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="icon-text">
+            <span class="title is-4"><a href="{{ link_url }}">{{ link_title | truncate: 40 }}</a></span>
+          </span>
+          <p class="subtitle is-6">{{ link_description | truncate: 60 }}</p>
         </div>
       </div>
+    </a>
+  </div>
   
-      <div class="content">
-        {{ link_description | truncate: 100 }}
-      </div>
-    </div>
