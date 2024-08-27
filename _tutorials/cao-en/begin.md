@@ -30,7 +30,7 @@ todo: 100
 
 ## Goals
 
-The goal of these 15 hours is to introduce you to two rapid prototyping techniques: 3D printing and laser cutting. To do this, you will start by following tutorials that will teach you design techniques for these two machines. Then, you will decide on a small personal or group project that you will design and create.
+The goal is to introduce you to two rapid prototyping techniques: 3D printing and laser cutting. To do this, you will start by following tutorials that will teach you design techniques for these two machines. Then, you will decide on a small personal or group project that you will design and create.
 
 ## Steps
 
@@ -86,7 +86,7 @@ title="7 - Training"
 content="In this section, you will find images and blueprints of rooms that allow you to practice 3D modeling.
 
 - [Training Project](../training)"
-image="EXO-3-1.png" %}!
+image="EXO-3-1.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
