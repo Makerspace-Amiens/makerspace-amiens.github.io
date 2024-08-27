@@ -294,7 +294,7 @@ Si le site a des metadata OpenGraph enregistrées :
     {% linkpreview "https://github.com/LesKaribous/Karibous-2023-Hardware" %}
 </div>
 
-### 4.4 Jekyll remote Include
+### 3.4 Jekyll remote Include
 
 [Jekyll-remote-include](https://github.com/netrics/jekyll-remote-include) permet d'inclure une page markdown externe directement dans un page du site. Cela permet de rendre un readme d'un autre repo projet par exemple.
 
