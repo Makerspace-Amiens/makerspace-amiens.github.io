@@ -29,6 +29,20 @@ Le processeur Markdown utilisé est **"Kramdowm"**. Vous pouvez en retrouver une
 Si la génération locale ne fonctionne pas correctement avec WSL ou si la regénération ne se fait pas, vous ouvez utiliser cette commande :
 ```bundle exec jekyll serve --force_polling --livereload```
 
+Pour une utilisation avec l'espace en ligne "CodeSpace" de GitHub, il faudra mettre en place certains outils avant de générer le site :
+
+- Installer rvm et la version de ruby 2.7.0 utilisé par le site :
+```rvm install "ruby-2.7.0"```
+- Spécifier l'utilisaiton de la version de Ruby :
+```rvm use 2.7.0```
+- Installer les gemmes spécifiées dans le fichier "Gemfile" du projet :
+```bundle install```
+- Vérifier les mises à jour des gemmes :
+```bundle update```
+- Générer en local le site :
+```bundle exec jekyll serve```
+
+
 ## 1.2 Utilitaire de recherche
 
 Pour l'utilitaire de recherche, celui-ci est intégré au site en utilisant [Jekyll instant search](https://blog.webjeda.com/instant-jekyll-search/). Celui-ci est simple et léger mais ne se base que sur les infos fournis dans le **Front Matter** de chaque page. 
