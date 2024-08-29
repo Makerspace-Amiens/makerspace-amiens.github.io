@@ -43,7 +43,7 @@ image="2023-07-21-15-00-33.png" %}
 {% include step-tuto.html 
 greyBackground = false
 title="2 - Small 3D Printing Project"
-content="Before designing your 3D objects, we suggest you choose an already modeled object to 3D print from the internet. For this, visit the [Thangs](https://thangs.com) website and select a small project to print. Be careful not to choose a project that is too complex or too large initially. If you have found your project, check its feasibility with the FabManager.
+content="Before designing your 3D objects, we suggest you choose an already modeled object to 3D print from the internet. For this, visit the [Printables](www.printables.com) website and select a small project to print. Be careful not to choose a project that is too complex or too large initially. If you have found your project, check its feasibility with the FabManager.
 
 Most parts will be printed during the session. If there are remaining parts to be printed, or if the parts take too long to print, they will be printed for the next session."
 image="featured_preview_thingiverse.JPG" %}
