@@ -1,8 +1,8 @@
 ---
 layout: tutorial
-image: OnShape(2).png
+image: opera_ZUFfmL9HCZ.png
 hide_hero: false
-hero_image: OnShape(2).png
+hero_image: opera_ZUFfmL9HCZ.png
 hero_darken: true
 component_toc: true
 background_color: '#edf7f0'
@@ -34,7 +34,7 @@ todo: 100
 
 ![](2022-09-08-09-17-59.png)
 
-L'objectif de ce tutorel est d'étendre vos connaissances sur On-Shape en réalisant pas-à-pas la pièce ci-dessus. L'ensemble des fonctions utilisées ne sont pas explicitées de manière exhaustives donc n'hésitez pas à tester par vous même certaines options.
+L'objectif de ce tutoriel est d'étendre vos connaissances sur On-Shape en réalisant pas-à-pas la pièce ci-dessus. L'ensemble des fonctions utilisées ne sont pas expliquées de manière exhaustives donc n'hésitez pas à tester par vous-même certaines options.
 
 Cette pièce pourra être, par la suite, découpée au laser (explicité dans un autre tutoriel).
 
@@ -42,20 +42,20 @@ Cette pièce pourra être, par la suite, découpée au laser (explicité dans un
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 1"
+title="ETAPE 1 - Nouveau document"
 content="Créez un nouveau **Document** dans OnShape puis une esquisse sur le plan du Dessus (**Top**). Reproduisez ensuite l'esquisse cotée ci-contre." 
 image="opera_zzMVyB8RCh.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE 2"
-content="Effectuez une extrusion de **3 mm** de votre esquisse precedemment créée. C'est l'épaisseur de votre materiaux que vous découperez par la suite au laser. Même si cela n'a pas un impact sur le fichier utilisé pour la découpe laser, il est important d'utiliser les cotations réelles, notamment dans des cas d'assemblage comme nous le verrons plus tard." 
+title="ETAPE 2 - Extrusion du contour"
+content="Effectuez une extrusion de **3 mm** de votre esquisse precedemment créée. C'est l'épaisseur de votre matériau que vous découperez par la suite au laser. Même si cela n'a pas d'impact sur le fichier utilisé pour la découpe laser, il est important d'utiliser les cotations réelles, notamment dans des cas d'assemblage comme nous le verrons plus tard." 
 image="opera_8vsmUcWcJf.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 3"
-content="Creez une nouvelle esquisse sur le dessus de votre pièce. A l'aide de l'outil **Symétrie** et des outils précédemment utilisés, créez un triangle comme dans la vue ci-contre.
+title="ETAPE 3 - Création de la première marque"
+content="Créez une nouvelle esquisse sur le dessus de votre pièce. A l'aide de l'outil **Symétrie** et des outils précédemment utilisés, créez un triangle comme dans la vue ci-contre.
 
 ![alt text](opera_khzUucGfSn.png)
 " 
@@ -64,13 +64,13 @@ image_2="opera_U9HzW5zkPq.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE 4"
+title="ETAPE 4 - Créez la première marque"
 content="Extrudez de 0.5mm le triangle créé precedemment." 
 image="opera_75xeXaQL3Q.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 5"
+title="ETAPE 5 - Répétition"
 content="Nous allons maintenant repeter cette operation en utilisant la fonction de repetition circulaire de On-Shape et ainsi créer l'ensemble des marques pour la fonction **Rapporteur** de notre outil. 
 
 ![alt text](opera_2QjPnU5Q8l.png)
@@ -85,14 +85,14 @@ image="opera_ebrHQTi4Qk.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE 6"
+title="ETAPE 6 - Seconde marque"
 content="Pour la réalisation des angles à 5°, nous allons utiliser exactement le même procédé. Réalisez le triangle à 5° du premier precedemment réalisé (voir image ci-contre) puis effectuez la fonction de répétition circulaire." 
 image="opera_RFDqDNcpHC.png"
 image_2="opera_yTg6UOlHDi.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 7"
+title="ETAPE 7 - Ajout de l'outil rainure"
 content="Afin de réaliser l'étape des rainures pour la règle, nous allons utiliser un outil **Rainure** qui n'est peut être pas disponible dans votre interface, ou dans votre barre d'outils de raccourcis. 
 
 ![alt text](opera_P1ToyjtuoC.png)
@@ -106,8 +106,8 @@ image="opera_BFyT4asXJA.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE 8"
-content="Grâce à l'outil **Rainure** vu precedemment, créez une réinure comme sur la vue ci-contre. Une rainure se créé sur une ligne. Créez et cotés votre ligne puis ensuite utilisez l'outil **Rainure** pour rajouter votre rainure à ces ligne. 
+title="ETAPE 8 - Création de la rainure"
+content="Grâce à l'outil **Rainure** vu precedemment, créez une rainure comme sur la vue ci-contre. Une rainure se créé sur une ligne. Créez et cotez votre ligne puis ensuite utilisez l'outil **Rainure** pour rajouter votre rainure à ces ligne. 
 
 Une fois cela fait, réalisez un enlevement de matière de 0.5mm comme pour les précédentes rainures du rapporteur.
 
@@ -116,7 +116,7 @@ image="opera_Ga4HNwuD1r.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 9"
+title="ETAPE 9 - Répétition linéaire"
 content="Nous allons maintenant réaliser une **répétition linéaire** de cette rainure. Pour cela, le processus est très similaire à la **répétition circulaire**. 
 
 ![alt text](opera_R1HmAkQlwX.png)
@@ -129,7 +129,7 @@ image="opera_jxpEW0589o.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE 10"
+title="ETAPE 10 - Graduations suplémentaires"
 content="Effectuez les opération similaires afin d'obtenir les graduations tous les **5 mm**
 
 ![alt text](opera_VUANwChrgM.png)
@@ -140,7 +140,7 @@ image="opera_7NgkyarupC.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 11"
+title="ETAPE 11 - Ajout de texte"
 content=" Nous allons maintenant utiliser l'outil **Texte** afin de rajouter du texte à notre outil
 
 ![alt text](opera_vpALW3dzvd.png)
@@ -155,7 +155,7 @@ image="opera_lqBR6tybaS.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE 12"
+title="ETAPE 12 - Orientation du texte"
 content="Pour les écritures des angles, vous pouvez orienter le texte. Il faut au préalable supprimer la contrainte d'horizontalité. pour cela, selectionnez **Afficher les contraintes**, puis selectionnez la contriante d'horizontalité (en jaune) et appuyez sur la touche **Suppr** de votre clavier. Vous aurez allors tout le loisir d'orienter votre texte.
 
 ![alt text](opera_HDnsncWyvT.png)
@@ -173,8 +173,8 @@ image="opera_UTzF2IPIdU.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 13"
-content="Pour l'enelevement de matière des textes, n'oubliez pas de **cocher** la case **Fusionner avec tous**. Dans le cas contraire, de nombreuses pièces risquent d'être créées.
+title="ETAPE 13 - Extrusion du texte"
+content="Pour l'enlevement de matière des textes, n'oubliez pas de **cocher** la case **Fusionner avec tous**. Dans le cas contraire, de nombreuses pièces risquent d'être créées.
 
 ![alt text](opera_qbmdnFGBSe.png)
 "
@@ -182,7 +182,7 @@ image="opera_wnyHZafjb6.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE 14"
+title="ETAPE 14 - Intégration d'un logo"
 content="
 Pour intégrer un logo ou une image, vous pouvez utiliser le format DXF. Nous allons ici utiliser le logo UniLaSalle que vous pouvez télécharger [en utilisant ce lien](LogoUniLaSalle.dxf). 
 
@@ -204,36 +204,39 @@ image="opera_ZUFfmL9HCZ.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE "
-content=""
-image="" %}
+title="ETAPE 15 - Création de la page de déssin"
+content="Afin de créer les fichiers pour la découpe laser, nous allons utiliser une vue de déssin permettant de mettre en forme les différentes pièces à découpes.
+
+Cliquez droit sur votre pièce dans l'arbre de Pièces puis cliquez sur **Créer le dessin de...**. Cliquez ensuite sur **Modèle personnalisé** et personnalisez votre vue de dessin comme suit :
+
+![alt text](opera_DerIA8dnFV.png)
+
+Ainsi vous creez un dessin vierge dans lequelle vous allez pouvoir importer vos vues pour la découpe laser. 
+"
+image="opera_Ar0gKL95sl.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
-title="ETAPE "
-content=""
-image="" %}
+title="ETAPE 16 - Intégration des différentes vues"
+content="Vous arrivez sur l'onglet de votre dessin precedemment créé. Vous pouvez maintenant ajuster les paramètres afin de positionner votre vue de gravure sur votre déssin. 
+
+![alt text](opera_cXLctPQKng.png)
+
+**ATTENTION :** Vérifiez bien que votre echelle est positionnée sur 1:1. 
+
+Vous pouvez rajouter une autre vue en dessous qui sera la découpe de contour de votre règle. Les éléments seront rassemblés par la suite sur le logiciel de la laser.
+
+![alt text](opera_QspDRDQeWI.png)
+
+"
+image="opera_urBV7QnDsc.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE "
-content=""
-image="" %}
+title="ETAPE 17 - Export des fichiers"
+content="Vous pouvez maintenant exporter votre page en fichier SVG en cliquant droit sur l'onglet, puis **exporter**. Vérifiez les paramètre d'exportation comme indiqué sur l'image.
 
-{% include step-tuto.html 
-greyBackground = false
-title="ETAPE "
-content=""
-image="" %}
+![alt text](opera_ayKWnRzqwn.png)"
+image="opera_hq0JUzA5DV.png" %}
 
-{% include step-tuto.html 
-greyBackground = true
-title="ETAPE "
-content=""
-image="" %}
-
-{% include step-tuto.html 
-greyBackground = false
-title="ETAPE "
-content=""
-image="" %}
+{% include message.html title="Découpe laser" message="Avant de lancer la découpe et la gravure, il est toujours interessant de vérifier votre fichier avec le logiciel **InkScape**. Cela vous permettra d'identifier les soucis liés à un mauvais dimensionnement, ou un export de mauvaise qualité." %}
