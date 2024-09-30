@@ -54,8 +54,9 @@ content="Créez un nouveau **Document** dans OnShape puis une esquisse sur le pl
 
 ![alt text](opera_6WpHNgYTnZ.png)
 " 
-image="opera_9i9la5FIdz.png"
+image="opera_sK3GnmI3Oe.png"
 image_2="opera_SI2pVdwusl.png" %}
+
 
 ## Téléchargement d'un modèle externe
 
