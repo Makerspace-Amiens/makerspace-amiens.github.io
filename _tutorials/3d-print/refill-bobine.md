@@ -7,8 +7,8 @@ hero_darken: true
 component_toc: true
 background_color: '#f7f4ed'
 
-title: Changer les bobines au MakerSpace
-subtitle: Comment changer les bobines de filament 3D ROSA - refill 
+title: Recharger les bobines au MakerSpace
+subtitle: Comment recharger les bobines de filament 3D ROSA - refill 
 description: 
 tags: 3d-print
 type: 3d-print

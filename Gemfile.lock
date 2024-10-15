@@ -45,7 +45,7 @@ GEM
     faraday-retry (2.2.1)
       faraday (~> 2.0)
     fastimage (2.3.1)
-    ffi (1.17.0)
+    ffi (1.16.3)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     http-cookie (1.0.7)
@@ -125,7 +125,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    rexml (3.3.7)
+    rexml (3.3.8)
     rouge (3.30.0)
     ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
@@ -135,7 +135,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     wdm (0.1.1)
-    webrick (1.8.1)
+    webrick (1.8.2)
     zlib (2.1.1)
 
 PLATFORMS
