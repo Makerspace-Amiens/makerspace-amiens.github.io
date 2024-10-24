@@ -1,9 +1,9 @@
 ---
 
 layout: tutorial  
-image: Print_Slider.gif  
+image: Benchy.png  
 hide_hero: true  
-hero_image: Print_Slider.gif  
+hero_image: Benchy.png  
 hero_darken: true  
 component_toc: true  
 background_color: '#f7f4ed'
@@ -77,9 +77,9 @@ content="Si l'imprimante est éteinte, le bouton d'allumage se trouve à l'**arr
 greyBackground = true  
 image = "Landing_Page_Orca.png"  
 title="2 - Importation de votre pièce"  
-content="Sur l'un des postes du PrinterLab, branchez votre clé USB et ouvrez le logiciel **OrcaSlicer** ![OrcaSlicer icon](Orca_Icon.png). OrcaSlicer est un logiciel de type **slicer** qui transforme les modèles 3D en instructions détaillées pour les imprimantes 3D.
+content="Sur l'un des postes du PrinterLab, branchez votre clé USB et ouvrez le logiciel **OrcaSlicer** ![OrcaSlicer icon](Orca_Icon.png). OrcaSlicer est un logiciel de **tranchage** qui transforme les modèles 3D en instructions détaillées pour les imprimantes 3D.
 
-Sur la page d'accueil, cliquez sur **Nouveau Projet**.
+Sur la page d'accueil, cliquez sur **New Project**.
 
 ![Nouveau Projet Orca](New_Project.png)"  
 %}
@@ -87,7 +87,7 @@ Sur la page d'accueil, cliquez sur **Nouveau Projet**.
 {% include step-tuto.html  
 greyBackground = true  
 image = "Empty_File.png"  
-content="En haut du volet de gauche, dans le **menu déroulant**, **sélectionnez la machine choisie plus tôt**.
+content="En haut du volet de gauche, dans le **menu déroulant Printer**, **sélectionnez la machine choisie plus tôt**.
 
 ![Choix imprimante](Printer_Choice_Menu.png)"  
 %}
@@ -95,9 +95,9 @@ content="En haut du volet de gauche, dans le **menu déroulant**, **sélectionne
 {% include step-tuto.html  
 greyBackground = true  
 image = "Benchy_On_Plate.png"  
-content="Dans le **ruban supérieur**, cliquez sur le bouton **Ajouter** ![Ajouter](Add_Part.png) et sélectionnez votre **fichier** dans l'**explorateur de fichiers**.
+content="Dans le **ruban supérieur**, cliquez sur le bouton **Ajouter** ![Ajouter](Add_Part.png) et sélectionnez votre **pièce** dans l'**explorateur de fichiers**.
 
-Après validation, votre pièce devrait **apparaître au centre du plateau.**"  
+Après validation, votre modèle devrait **apparaître au centre du plateau.**"  
 %}
 
 {% include step-tuto.html  
@@ -112,19 +112,19 @@ content="Dans le menu déroulant **Filament** sur le panneau de gauche, sélecti
 {% include step-tuto.html  
 greyBackground = true  
 image = "Brim.png"  
-content="Pour garantir l'adhérence de la pièce sur le plateau d'impression, rendez-vous sur le panneau **Autre** dans le volet gauche.  
-Dans le menu déroulant **Type de bordure**, sélectionnez **Bordure extérieure uniquement**.
+content="Pour garantir l'adhérence de la pièce sur le plateau d'impression, rendez-vous sur le panneau **Others** dans le volet gauche.  
+Dans le menu déroulant **Brim type**, sélectionnez **Inner brim only**.
 
 ![Menu bordure](Brim_Choice_Menu.png)
 
-Augmentez ensuite la **Largeur de la bordure** à **5 mm**.
+Augmentez ensuite la **largeur de la bordure** en passant le paramètre **Brim width** à **5 mm**.
 
 Pour de très petites pièces, préférez une valeur proche de **10 mm**.
 
 ![Paramètre bordure](Brim_Param.png)"  
 %}
 
-{% include message.html title="Attention" message="Une imprimante ne peut imprimer dans le vide. Si votre pièce présente des surplombs importants, vous devrez cocher la case **Activer les supports** dans l'onglet **Supports**. Si vous avez un doute, référez-vous à ce [**guide sur les supports en impression 3D**](https://all3dp.com/1/3d-printing-support-structures/) ou demandez conseil à un **fab manager**." status="is-warning" dismissable="true" icon="fas fa-exclamation-triangle" %}
+{% include message.html title="Attention" message="Une imprimante ne peut imprimer dans le vide. Si votre pièce présente des surplombs importants, vous devrez cocher la case **Enable support** dans l'onglet **Support**. Si vous avez un doute, référez-vous à ce [**guide sur les supports en impression 3D**](https://all3dp.com/1/3d-printing-support-structures/) ou demandez conseil à un **fab manager**." status="is-warning" dismissable="true" icon="fas fa-exclamation-triangle" %}
 
 {% include step-tuto.html  
 greyBackground = true  
@@ -146,14 +146,18 @@ image = "Window.png"
 content="Avant de lancer l'impression, vérifiez que :  
 - L'impression finira bien **avant l'heure de fermeture du MakerSpace** (consultez un **fab manager**).  
 - La machine que vous avez choisie est **toujours disponible**.  
-- Le plateau d'impression est vide et propre. Si ce n'est pas le cas, des lingettes et de l'alcool isopropylique sont à votre disposition sur le coté de la servante rouge."  
+- Le plateau d'impression est **vide et propre**. Si ce n'est pas le cas, des **lingettes** et du produit de nettoyage sont à votre disposition sur le coté de la servante rouge.
+
+![Nettoyage](Cleaning_Gear.png)
+
+"
+
 %}
 
 {% include step-tuto.html  
 greyBackground = true  
-title="4 - Impression"  
+title="4 - Lancement de l'impression"  
 image = "Window.png"  
-image_2 = "First_Layer.png"  
 content="Vous pouvez maintenant cliquer sur le bouton ![Imprimer](Print.png) en haut à droite de la fenêtre.
 
 Le **programme machine** est envoyé à l'imprimante, et l'impression devrait **commencer**.
@@ -162,5 +166,55 @@ Après une phase de préchauffage et de calibration, l'imprimante réalise la **
 
 Pour garantir le **succès** de l'impression, il est crucial de contrôler que la matière **adhère** bien au plateau.
 
-![En impression](Printing.gif)"  
+![En impression](Printing.gif)"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+title="5 - Impression"  
+image = "One_Eternity_Later.gif"  
+content="Il faut maintenant laisser **l'imprimante faire son travail** !
+
+Pour de longues impression, il est important de vérifier régulièrement que tout se passe bien.
+
+Si la **pièce se décolle** avant de terminer ou qu'un **autre problème** survient, vous devrez **stopper l'impression** depuis le **panneau de contrôle** du serveur :
+
+![Stopper impression](Stop_Print.gif)
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+title="6 - Post processing"  
+image = "Remove_Part.gif"  
+content="Après un peu de patience, voici votre **impression terminée** ! 
+
+Pour **retirer la pièce du plateau**, pas besoin de forcer ! Il suffit d'attendre que le plateau refroidisse.
+
+Après quelques minutes, soulevez et courbez légerement le plateau, **sans le retirer** :
+
+Si la pièce ne se décroche pas, **attendez quelques minutes** que le plateau refroidisse davantage.
+
+
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Remove_Brim_And_Trash.gif"  
+content=" Retirez **bordures** et **dépôts** de filament sur le plateau, si vous avez activé l'option, **retirez également les supports**.
+
+Jetez vos déchets dans la poubelle située à l'entrée du **PrinterLab**.
+
+Assurez-vous de laisser votre espace de travail propre et prêt pour les prochains !
+
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Benchy.png"  
+content=" Bravo ! Vous savez maintenant imprimer un pièce au **PrinterLab**
+
+"
 %}
