@@ -207,7 +207,7 @@ Assurez-vous de laisser votre espace de travail **propre** et **prêt** pour les
 %}
 
 {% include step-tuto.html  
-greyBackground = true  
+greyBackground = false  
 image = "Benchy.png"  
 content="Bravo ! Vous savez maintenant imprimer une pièce au **PrinterLab**.
 
