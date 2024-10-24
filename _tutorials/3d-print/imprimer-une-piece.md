@@ -1,9 +1,9 @@
 ---
 
 layout: tutorial  
-image: Benchy.png  
+image: Benchy+Logo.png  
 hide_hero: true  
-hero_image: Benchy.png  
+hero_image: Benchy+Logo.png  
 hero_darken: true  
 component_toc: true  
 background_color: '#f7f4ed'
@@ -22,7 +22,7 @@ softwares:
   - label: OrcaSlicer  
     link: ""
 
-todo: 80  
+todo: 100  
 ---
 
 # Impression 3D d'une pièce
@@ -175,9 +175,9 @@ title="5 - Impression"
 image = "One_Eternity_Later.gif"  
 content="Il faut maintenant laisser **l'imprimante faire son travail** !
 
-Pour de longues impression, il est important de vérifier régulièrement que tout se passe bien.
+Pour les longues impressions, il est important de vérifier régulièrement que tout se passe bien.
 
-Si la **pièce se décolle** avant de terminer ou qu'un **autre problème** survient, vous devrez **stopper l'impression** depuis le **panneau de contrôle** du serveur :
+Si la **pièce se décolle** avant la fin ou qu'un **autre problème** survient, vous devrez **arrêter l'impression** depuis le **panneau de contrôle** du serveur :
 
 ![Stopper impression](Stop_Print.gif)
 "
@@ -185,36 +185,32 @@ Si la **pièce se décolle** avant de terminer ou qu'un **autre problème** surv
 
 {% include step-tuto.html  
 greyBackground = true  
-title="6 - Post processing"  
+title="6 - Post-traitement"  
 image = "Remove_Part.gif"  
 content="Après un peu de patience, voici votre **impression terminée** ! 
 
 Pour **retirer la pièce du plateau**, pas besoin de forcer ! Il suffit d'attendre que le plateau refroidisse.
 
-Après quelques minutes, soulevez et courbez légerement le plateau, **sans le retirer** :
+Après quelques minutes, soulevez et courbez légèrement le plateau, **sans le retirer**.
 
-Si la pièce ne se décroche pas, **attendez quelques minutes** que le plateau refroidisse davantage.
-
-
-"
+Si la pièce ne se décroche pas, **attendez quelques minutes** que le plateau refroidisse davantage."
 %}
 
 {% include step-tuto.html  
 greyBackground = true  
 image = "Remove_Brim_And_Trash.gif"  
-content=" Retirez **bordures** et **dépôts** de filament sur le plateau, si vous avez activé l'option, **retirez également les supports**.
+content="Retirez les **bordures** et **dépôts** de filament sur le plateau. Si vous avez activé l'option, **retirez également les supports**.
 
 Jetez vos déchets dans la poubelle située à l'entrée du **PrinterLab**.
 
-Assurez-vous de laisser votre espace de travail propre et prêt pour les prochains !
-
-"
+Assurez-vous de laisser votre espace de travail **propre** et **prêt** pour les prochains !"
 %}
 
 {% include step-tuto.html  
 greyBackground = true  
 image = "Benchy.png"  
-content=" Bravo ! Vous savez maintenant imprimer un pièce au **PrinterLab**
+content="Bravo ! Vous savez maintenant imprimer une pièce au **PrinterLab**.
 
+Pour que ce lieu reste **ouvert à toutes et tous**, c'est maintenant à vous de **partager ce que vous avez** appris dans ce tuto !
 "
 %}
