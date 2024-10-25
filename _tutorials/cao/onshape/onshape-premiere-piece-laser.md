@@ -204,8 +204,8 @@ image="opera_ZUFfmL9HCZ.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
-title="ETAPE 15 - Création de la page de déssin"
-content="Afin de créer les fichiers pour la découpe laser, nous allons utiliser une vue de déssin permettant de mettre en forme les différentes pièces à découpes.
+title="ETAPE 15 - Création de la page de dessin"
+content="Afin de créer les fichiers pour la découpe laser, nous allons utiliser une vue de dessin permettant de mettre en forme les différentes pièces à découpes.
 
 Cliquez droit sur votre pièce dans l'arbre de Pièces puis cliquez sur **Créer le dessin de...**. Cliquez ensuite sur **Modèle personnalisé** et personnalisez votre vue de dessin comme suit :
 
@@ -218,7 +218,7 @@ image="opera_Ar0gKL95sl.png" %}
 {% include step-tuto.html 
 greyBackground = false
 title="ETAPE 16 - Intégration des différentes vues"
-content="Vous arrivez sur l'onglet de votre dessin precedemment créé. Vous pouvez maintenant ajuster les paramètres afin de positionner votre vue de gravure sur votre déssin. 
+content="Vous arrivez sur l'onglet de votre dessin precedemment créé. Vous pouvez maintenant ajuster les paramètres afin de positionner votre vue de gravure sur votre dessin. 
 
 ![alt text](opera_cXLctPQKng.png)
 

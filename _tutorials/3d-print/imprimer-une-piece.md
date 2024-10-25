@@ -29,9 +29,9 @@ todo: 100
 
 ### Introduction
 
-Ce **tutoriel d'initiation** vous guidera de l'**importation** de votre modèle jusqu'au **lancement de l'impression**, tout en vous aidant à éviter les erreurs courantes.
+Ce **tutoriel d'initiation** vous guidera de l'**importation** de votre modèle jusqu'a la **fin de l'impression**, en vous aidant à éviter les erreurs courantes.
 
-Avant de débuter ce tutoriel, nous supposons que votre pièce **a déjà été conçue et exportée** au format ***STL*** ou ***3MF*** depuis votre logiciel de CAO (OnShape, Solidworks, FreeCAD, Fusion 360...).
+Avant de débuter ce tutoriel, nous supposons que votre pièce **a déjà été conçue et exportée** au format **.STL** ou **.3MF** depuis votre logiciel de CAO (OnShape, Solidworks, FreeCAD, Fusion 360...).
 
 Si votre modèle n'est pas encore créé, rendez-vous sur la page [**tutoriels CAO**](/pages/tutoriels-cao).
 

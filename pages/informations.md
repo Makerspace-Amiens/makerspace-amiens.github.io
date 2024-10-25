@@ -18,23 +18,19 @@ show_edit: false
 
 <model-viewer src="EPI2-4 - Makerspace - 02 - Simples Volumes.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1.68" camera-orbit="-20.04deg 51.08deg 64.68m" field-of-view="22.98deg">
     <button class="Hotspot" slot="hotspot-1" data-position="6.193030378495454m 2.5m 3.7898285088421986m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">UniMakers</div>
+        <div class="HotspotAnnotation">Bureau & UniMakers</div>
     </button><button class="Hotspot" slot="hotspot-2" data-position="12.467982602918411m 2.5m 3.985026989659886m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation">ResinLab</div>
     </button><button class="Hotspot" slot="hotspot-4" data-position="1.546261544949933m 2.5m -7.693876148510135m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation">PrinterLab</div>
-    </button><button class="Hotspot" slot="hotspot-5" data-position="2.3664019959055844m 2.5m -2.8457768909045527m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">Robotic</div>
-    </button><button class="Hotspot" slot="hotspot-6" data-position="1.4899743563741628m 2.5m 3.3472940345437046m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+    </button><button class="Hotspot" slot="hotspot-5" data-position="1.4899743563741628m 2.5m 3.3472940345437046m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation">MecaLab</div>
-    </button><button class="Hotspot" slot="hotspot-7" data-position="-4.264132025237139m 2.5m 3.6820934325375454m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">Meeting</div>
-    </button><button class="Hotspot" slot="hotspot-9" data-position="-8.923311236485663m 2.5m 3.2332405907411683m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">OpenLab</div>
-    </button><button class="Hotspot" slot="hotspot-10" data-position="-14.124997396084499m 2.499999999999993m 3.527443327634824m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+    </button><button class="Hotspot" slot="hotspot-6" data-position="-8.923311236485663m 2.5m 3.2332405907411683m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">RoboLab</div>
+    </button><button class="Hotspot" slot="hotspot-7" data-position="-14.124997396084499m 2.499999999999993m 3.527443327634824m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation">MediaLab</div>
-    </button><button class="Hotspot" slot="hotspot-11" data-position="-2.0089794282240554m 2.5m 2.011047578051304m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">Office</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-position="-2.0089794282240554m 2.5m 2.011047578051304m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">CozyLab</div>
     </button>
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
