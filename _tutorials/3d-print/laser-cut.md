@@ -1,9 +1,9 @@
 ---
 
 layout: tutorial  
-image: Flat_Benchy.png  
+image: Icon.png  
 hide_hero: true  
-hero_image: Flat_Benchy.png  
+hero_image: Icon.png  
 hero_darken: true  
 component_toc: true  
 background_color: '#f7f4ed'
@@ -24,7 +24,7 @@ softwares:
 
   - label: LaserBox
     link: "https://support.makeblock.com/hc/en-us/articles/25439631937687-Use-Laserbox-Software"
-todo: 30  
+todo: 90  
 ---
 
 # Découpe d'une pièce
@@ -37,7 +37,12 @@ Si votre modèle n'est pas encore créé, rendez-vous sur la page [**tutoriels C
 
 Contrairement à l'**impression 3D**, la **découpe laser** travaille sur un seul plan, elle permet de découper et graver des formes dans des plaques en brûlant de la matière.
 
-{% include message.html title="Pré-requis" message="Dans les premières étapes de ce tutoriel, vous apprendrez à exporter votre plan de découpe depuis **OnShape**. Si vous avez déja un fichier **.DXF**, rendez vous à l'**étape 2**." status="is-info" dismissable="true" icon="fas fa-duotone fa-cube" %}
+Dans les premières étapes de ce tutoriel, vous apprendrez à **exporter votre plan de découpe** depuis **OnShape**.
+
+Si vous avez déja un fichier **.DXF** ou **.SVG**, rendez vous à l'**étape 2**.
+
+{% include message.html title="Contraintes dimensionnelles" message="**Dans votre conception**, n'oubliez pas de prendre en compte la **surface de découpe maximale** : **49cm x 29cm**.
+" status="is-warning" dismissable="true" icon="fas fa-exclamation-triangle" %}
 
 {% include step-tuto.html  
 greyBackground = true  
@@ -70,12 +75,160 @@ Placez ensuite le fichier téléchargé dans votre **clé USB**.
 
 {% include step-tuto.html  
 greyBackground = true  
-image = "Flat_Benchy_DXF.png"
+image = "LaserBox_Context.png"
 title="2 - Préparation et vérification"
 content="Rendez-vous maintenant au [**MécaLab**](/pages/informations). Cet espace est dédié à l'**usinage,** **perçage** et **découpe** de divers matériaux.
 
 La **découpeuse laser** se trouve au **fond à droite de la pièce**.
+"
+%}
 
+{% include step-tuto.html  
+greyBackground = true  
+image = "Exhaust_Pipe.png"
+content="**Ouvrez la fenêtre** et faites sortir le **tuyau d'évacuation des fumées**.
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Power_Switch.png"
+content="**Allumez** ensuite la **découpeuse laser**. 
+
+Le **bouton** se trouve à l'**arrière droite** de la machine.
+
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Power_Button_PC.png"
+content="Si le **PC** est éteint, allumez le grâce au **bouton** à l'**arrière de l'écran**
+
+Pour ouvrir la session, le mot de passe est le **nom du compte**, **
+** ni espaces.
+"
+%}
+
+{% include message.html title="Conseil" message="Pour tester un **assemblage**, nous vous conseillons de commencer par un **prototype en carton**.
+
+Cela vous permettra de **tester vos dimensions** tout en **économisant de la matière**.
+
+Le carton se trouve sur le dessus de l'armoire." status="is-info" dismissable="true" icon="fas fa-duotone fa-cube" %}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Material_Shelf.png"
+content="Sélectionnez ensuite votre matèriau :
+
+La **première étagère** est réservée au **contre-plaqué de 3mm**, à gauche, les **plaques neuves**, et à droite **les chutes**.
+
+De même pour la **deuxième étagère**, pour le **contre-plaqué de 5mm**.
+
+En bas se trouvent les plaques en acrylique.
+
+Commencez par **vérifier si une des chutes** pourrait convenir à votre découpe, si non, prenez une **plaque neuve**.
+
+Nous choisissons ici du **contre-plaqué 3mm**.
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Plank_In_Laserbox.png"
+content="Ouvrez le **capot** de la découpeuse et **positionnez la plaque** que vous avez choisie.
+
+Fermez le capot en **accompagnant la fermeture** jusqu'au bout.
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "USB_Port.png"
+content=" Branchez ensuite votre **clé** dans l'**embase USB** devant l'écran.
+
+Sur le PC, ouvrez le logiciel **Laserbox**, présent dans la **barre des tâches**. ![Icon Laserbox](Laserbox_Icon.png)
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Laserbox_Welcome.png"
+content=" Le **menu d'acceuil** s'ouvre. Cliquez sur le **+** pour créer un nouveau projet.
+![Page d'accueil](New_Project.png)
+
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Benchy_Size_Box.png"
+content="Un **page vide** s'affiche maintenant, **cliquez sur importer** ![Importer](Folder_Import.png), en **haut à gauche**.
+
+Choisissez votre **fichier .DXF** dans l'**explorateur de fichier** pour l'**importer**.
+
+Votre **modèle** apparaît au milieu du plateau. 
+
+![Benchy sur nouvelle page](New_Page.png)
+
+**Cliquez** ensuite sur ![Mode surface plane](Laserbox_Flat_Surface_Mode.png)
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Benchy_Trace.png"
+content="Vous voyez maintenant l'**aperçu caméra** du **plateau de découpe**.
+
+**Déplacez** votre modèle pour le **positionner sur votre plaque**.
+
+![Déplacer modèle](Move_Model.gif)
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true  
+image = "Material_List.png"
+content="**Sélectionnez** ensuite le **matériau** dans le volet déroulant **en haut à gauche**.
+
+Voici la **liste des matériaux** et du **nom du réglage** à choisir :
+
+| **Matériau**               | **Réglage**       |
+| Carton                     | 3.5mm Carton      |
+| Contre-Plaqué 3mm          | 3mm Tilleul       |
+| Contre-Plaqué 5mm          | 5mm Tilleul       |
+| Acrylique 3mm              | 3mm Acrylique     |
+| Acrylique 5mm              | 5mm Acrylique     |
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true
+title = "3 - Découpe"  
+image = "Laserbox_Validation.png"
+content="Vous pouvez maintenant **envoyer la découpe** en cliquant sur le **bouton démarrer** ![Bouton démarrer](Laserbox_Send_Button.png) **en haut à droite**.
+
+Une **fenêtre de validation** s'ouvre, **cliquez sur** ![Envoyer](Laserbox_Send.png).
+
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = true
+image = "Cut_Button.png"
+content="Attendez le **BIP** sonore et **Appuyez** finalement sur le **bouton supérieur** de la découpeuse pour **lancer l'opération**.
+
+![Découpe](Cutting.gif)
+
+"
+%}
+
+{% include step-tuto.html  
+greyBackground = false  
+image = "Icon.png"  
+content="Bravo ! Vous savez maintenant **découper une pièce au laser** !
+
+Pour que ce lieu reste **ouvert à toutes et tous**, c'est maintenant à vous de **partager ce que vous avez** appris dans ce tuto !
 "
 %}
 

@@ -75,9 +75,12 @@ content="Si l'imprimante est éteinte, le bouton d'allumage se trouve à l'**arr
 
 {% include step-tuto.html  
 greyBackground = true  
-image = "Landing_Page_Orca.png"  
+image = "USB_Port.png"
+image_2 = "Landing_Page_Orca.png"
 title="2 - Importation de votre pièce"  
-content="Sur l'un des postes du PrinterLab, branchez votre clé USB et ouvrez le logiciel **OrcaSlicer** ![OrcaSlicer icon](Orca_Icon.png). OrcaSlicer est un logiciel de **tranchage** qui transforme les modèles 3D en instructions détaillées pour les imprimantes 3D.
+content="Sur l'un des postes du PrinterLab, branchez votre clé dans l'embase USB devant l'écran.
+
+Ouvrez le logiciel **OrcaSlicer** ![OrcaSlicer icon](Orca_Icon.png). OrcaSlicer est un logiciel de **tranchage** qui transforme les modèles 3D en instructions détaillées pour les imprimantes 3D.
 
 Sur la page d'accueil, cliquez sur **New Project**.
 
