@@ -105,7 +105,7 @@ greyBackground = true
 image = "Power_Button_PC.png"  
 content="Si le **PC** est éteint, allumez-le grâce au **bouton** à l'**arrière de l'écran**.
 
-Pour ouvrir la session, le mot de passe est le **nom du compte**, **sans espaces**.
+Pour ouvrir la session, demandez à un **fab manager**.
 "
 %}
 
