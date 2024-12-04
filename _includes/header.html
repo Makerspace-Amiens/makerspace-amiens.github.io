@@ -1,7 +1,7 @@
 <nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://www.esiee-amiens.fr">
+            <a class="navbar-item" href="https://www.unilasalle-amiens.fr">
                 <img src="{{ site.imgurl }}/unilasalleAmiensWhite.svg" alt="UniLaSalle">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
