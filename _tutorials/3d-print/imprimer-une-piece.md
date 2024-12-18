@@ -116,7 +116,7 @@ content="Dans le menu déroulant **Filament** sur le panneau de gauche, sélecti
 greyBackground = true  
 image = "Brim.png"  
 content="Pour garantir l'adhérence de la pièce sur le plateau d'impression, rendez-vous sur le panneau **Others** dans le volet gauche.  
-Dans le menu déroulant **Brim type**, sélectionnez **Inner brim only**.
+Dans le menu déroulant **Brim type**, sélectionnez **Outer brim only**.
 
 ![Menu bordure](Brim_Choice_Menu.png)
 
