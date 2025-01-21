@@ -1,8 +1,24 @@
-- name: Informations
-  link: /pages/informations
-- name: Blog
-  link: /blog
-- name: Les projets
+- name: Le MakerSpace
+  link: 
+  dropdown:
+    - name: Informations
+      link: /pages/informations
+    - name: Materiel
+      link: /pages/machines
+- name: Nos Ressources
+  link: 
+  dropdown:
+    - name: Conception 3D
+      link: /pages/tutoriels-cao
+    - name: Conception 3D (English)
+      link: /pages/tutoriels-cao-en
+    - name: Fabrication Additive
+      link: https://makerspace-amiens.fr/fab-additive/
+    - name: Le Robot Otto
+      link: https://makerspace-amiens.fr/otto-mks/
+    - name: Machine That Draws
+      link: https://makerspace-amiens.fr/machines-that-draws/
+- name: Les projets 
   link: 
   dropdown:
     - name: Robotique - 2023-24
@@ -19,17 +35,6 @@
       link: /pages/projets/projets-2023
     - name: Projets I3 - 2021-22
       link: /pages/projets/projets-2022
-- name: Materiel
-  link: /pages/machines
-- name: Tutoriels
-  link: 
-  dropdown:
-    - name: Conception 3D
-      link: /pages/tutoriels-cao
-    - name: Conception 3D (English)
-      link: /pages/tutoriels-cao-en
-    - name: Impression 3D
-      link: /pages/tutoriels-impression-3d
 - name: Les outils
   link: 
   dropdown:
