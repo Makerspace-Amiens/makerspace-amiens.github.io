@@ -5,6 +5,8 @@
       link: /pages/informations
     - name: Materiel
       link: /pages/machines
+    - name: ✨Nouveaux Laboratoires✨
+      link: /pages/new-lab
 - name: Nos Ressources
   link: 
   dropdown:
@@ -14,7 +16,7 @@
       link: /pages/tutoriels-cao-en
     - name: Outils et ressources externes
       link: /pages/external-tools
-    - name: Fabrication Additive
+    - name:  Fabrication Additive
       link: https://makerspace-amiens.fr/fab-additive/
     - name: Le Robot Otto
       link: https://makerspace-amiens.fr/otto-mks/
