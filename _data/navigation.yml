@@ -12,6 +12,8 @@
       link: /pages/tutoriels-cao
     - name: Conception 3D (English)
       link: /pages/tutoriels-cao-en
+    - name: Outils et ressources externes
+      link: /pages/external-tools
     - name: Fabrication Additive
       link: https://makerspace-amiens.fr/fab-additive/
     - name: Le Robot Otto
@@ -35,58 +37,3 @@
       link: /pages/projets/projets-2023
     - name: Projets I3 - 2021-22
       link: /pages/projets/projets-2022
-- name: Les outils
-  link: 
-  dropdown:
-    - name: Centre de documentation
-      link: https://cloudlasalle.sharepoint.com/sites/centre-de-documentation
-    - name: Dimensionnement de moteurs
-      link: /pages/calculateur-moteur-robot
-    - name: Simulateur Arduino
-      link: https://wokwi.com
-    - name: Generateur d'effet NeoPixel
-      link: https://adrianotiger.github.io/Neopixel-Effect-Generator/
-    - name: Build List
-      link: https://buildlist.org
-    - name: With Diode
-      link: https://www.withdiode.com
-    - name: CAD Assistant
-      link: https://www.opencascade.com/products/cad-assistant/
-    - name: Pinion KiCAD
-      link: https://yaqwsx.github.io/Pinion/
-    - name: sheetplus Ai
-      link: https://sheetplus.ai
-    - name: 3D print Quality Troubleshooting
-      link: https://www.simplify3d.com/resources/print-quality-troubleshooting/
-    - name: Trace Pixels To Vectors in Full Color
-      link: https://vectorizer.ai
-    - name: Calcul de couple pour systèmes 
-      link: https://www.nidec.com/en/product/calc/torque/
-    - name: Motiongen.io - Simulation de mécanismes
-      link: https://motiongen.io/app
-    - name: PDF Sam - utilitaire pour éditer des PDF
-      link: https://pdfsam.org
-    - name: Signature PDF
-      link: https://pdf.24eme.fr/signature
-    - name: RoboCup kit
-      link: https://robot-soccer-kit.github.io
-    - name: Tutos de CAO FreeCAD
-      link: https://lachiver.fr/Accueil/co/siteWeb.html
-    - name: Wurth Elektronik tool
-      link: https://redexpert.we-online.com/we-redexpert/en/#/home
-    - name: Learn Git !
-      link: https://learngitbranching.js.org
-    - name: RPM Visualizer
-      link: https://kowus.github.io/rpmVisualizer/index.html
-    - name: Optimize GLB
-      link: https://www.glb-optimizer.com/
-    - name: Guide des pratiques écologiques dans les labs
-      link: img/pdf/Guide des pratiques écologiques (charlie 01-06-24).pdf
-    - name: Générateur QR Code -> 3D
-      link: https://printer.tools/qrcode2stl
-    - name: Diataxis - Documentation Metod
-      link: https://diataxis.fr
-    - name: Nature Of Code
-      link: https://natureofcode.com
-    - name: Simulation Physique en ligne - JavLab
-      link: https://javalab.org
