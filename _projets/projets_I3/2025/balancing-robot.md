@@ -2,7 +2,8 @@
 project_number: 00
 hero_image: image.png
 hero_darken: true
-layout: image.png
+layout: project
+image: image.png
 product_toc: true
 
 title: Robot à auto-stabilisation 
