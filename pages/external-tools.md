@@ -144,4 +144,11 @@ url="https://javalab.org"
 title="JavLab" 
 description="Simulations physiques interactives en ligne" 
 %}
+
+{% include linkpreview_manual.html 
+url="https://www.youtube.com/watch?v=I0kK3Wcl45k" 
+title="5 Ways To Power A 3D Printed Button" 
+description="Video - 5 Ways To Power A 3D Printed Button" 
+%}
+
 </div>
