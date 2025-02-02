@@ -151,4 +151,10 @@ title="5 Ways To Power A 3D Printed Button"
 description="Video - 5 Ways To Power A 3D Printed Button" 
 %}
 
+{% include linkpreview_manual.html 
+url="https://www.youtube.com/watch?v=dnUqBoIq0J0" 
+title="Cable Management" 
+description="Conseils et astuces pour du cable management" 
+%}
+
 </div>
