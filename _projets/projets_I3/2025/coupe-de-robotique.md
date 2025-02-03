@@ -12,8 +12,8 @@ description:
 
 tags: 
 multi-group: false
-empty_group: true
-state_new: true
+empty_group: false
+state_new: false
 area: 
 soft: FreeCAD,Solidworks,Fusion 360,Cura,Inkscape
 
