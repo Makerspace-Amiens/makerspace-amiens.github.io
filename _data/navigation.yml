@@ -14,12 +14,14 @@
       link: /pages/tutoriels-cao
     - name: Conception 3D (English)
       link: /pages/tutoriels-cao-en
-    - name: Comment documenter & partager
+    - name: 🚧 Comment documenter & partager
       link: https://makerspace-amiens.fr/art-of-documentation/
     - name: Outils et ressources externes
       link: /pages/external-tools
-    - name:  Fabrication Additive
+    - name: Fabrication Additive
       link: https://makerspace-amiens.fr/fab-additive/
+    - name: 🚧 Design Electronique
+      link: https://makerspace-amiens.fr/electronic-design/
     - name: Le Robot Otto
       link: https://makerspace-amiens.fr/otto-mks/
     - name: Machine That Draws
