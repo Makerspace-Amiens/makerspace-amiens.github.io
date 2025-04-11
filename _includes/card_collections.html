@@ -1,0 +1,41 @@
+{% assign sorted_docs = site.docs| sort:include.sort %}
+
+<div class="column is-fullwidth">
+    <div class="content">
+        {% if include.title %}
+            <h2>{{ include.title }}</h2>
+        {% endif %}
+        {% if include.description %}
+            <p>{{ include.description }}</p>
+        {% endif %}
+    </div>
+</div>
+
+<div class="columns is-multiline">
+  {% for doc in sorted_docs %}
+  {% if doc.type contains include.type %}
+        <div class="column is-4-desktop is-6-tablet">
+          {% if doc.external_link %} <a href="{{ doc.external_link }}"> {% else %}  <a href="{{ doc.url | relative_url }}"> {% endif %}
+            <div class="card">
+              {% if doc.image %}
+              {% capture image-url %}{{ site.baseurl }}{{ doc.url }}{{ doc.image }}{% endcapture %}
+              <div class="card-image">
+                <figure class="image is-fullwidth fixed-image">
+                  <img src="{{ image-url }}" alt="{{ doc.title }}" />
+                </figure>
+              </div>
+              {% endif %}
+              <div class="card-content" style="background-color: {{ doc.background_color | default: '#FFFFFF' }}">
+                <p class="title is-5">{{ doc.title }}</p>
+                <p class="subtitle is-6">{{ doc.subtitle | truncate: 60 }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<div>
+    <div class="divider is-right"><a href="#">Top ↑</a></div>
+</div>

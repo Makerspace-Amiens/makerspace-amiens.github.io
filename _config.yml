@@ -1,0 +1,22 @@
+title: Craft The Docs
+description: Craft your docs for the MakerSpace Amiens
+theme: bulma-clean-theme
+url: https://makerspace-amiens.fr/craft-the-docs
+
+force_theme: light
+permalink: pretty
+footer_menu: footer_navigation
+lang: fr
+theme_color: '#ef2e31'
+fixed_navbar: top
+favicon: favicon.png
+
+paginate: 5
+paginate_path: "/blog/page:num"
+
+collections:
+  docs:
+    output: true
+    layout: documentation
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false

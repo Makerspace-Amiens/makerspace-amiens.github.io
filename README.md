@@ -1,8 +1,6 @@
 # Makerspace UniLaSalle Amiens
 Bienvenue sur le site du Makerspace Unilasalle Amiens
 
-[![](img/2022-12-21-10-20-14.png)](makerspace-amiens.fr)
-
 ## C’est quoi le “MakerSpace” ?
 
 Le Makerspace est un espace de co-conception et de prototypage intégré au sein d’UniLaSalle Amiens. Il est ouvert librement aux publics du campus, à savoir les étudiants et le personnels.
