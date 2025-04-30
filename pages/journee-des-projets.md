@@ -105,6 +105,10 @@ Au programme :
 
 Et bien d’autres associations seront également présentes avec des stands, des jeux, des présentations et des surprises pour faire de cette journée un moment de rencontre, de partage et de découverte.
 
+## Et l’entrepreneuriat à UniLaSalle ?
+
+Un espace sera également dédié à l’entrepreneuriat étudiant, avec un stand tenu par le pôle entrepreneuriat de l’école. Vous pourrez y découvrir les dispositifs d’accompagnement proposés à UniLaSalle Amiens, ainsi que quelques projets en cours portés par des étudiants engagés dans une démarche de création ou d’innovation.
+
 ---
 
 ## Infos pratiques
