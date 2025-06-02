@@ -18,7 +18,7 @@ image="image-project.png"
 %}
 
 {% include linkpreview_manual.html 
-url="" 
+url="https://unimakers.fr/CDR-2025-I3-RATP/" 
 title="02 - Coupe de France de Robotique" 
 description="Réalisation des actionneurs pour la Coupe de France de Robotique 2025." 
 image="image-project.png"
