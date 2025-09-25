@@ -7,6 +7,10 @@ hero_darken: true
 hero_image: assets/img/placeholder.png
 callouts: home_callouts
 show_sidebar: false
-hide_content: true
+hide_content: false
 hide_footer: true
 ---
+
+{% include chatbot.html 
+   title="Ottonio" 
+%}
