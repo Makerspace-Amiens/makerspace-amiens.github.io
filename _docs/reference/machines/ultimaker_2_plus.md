@@ -6,7 +6,7 @@ hero_darken: true
 image: "ultimaker_2_plus.jpg"
 component_toc: true
 doc_header: true
-type: machine
+type: doc,machine
 
 title: Ultimaker 2+
 subtitle: Imprimante 3D FDM

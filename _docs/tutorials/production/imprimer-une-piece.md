@@ -6,7 +6,7 @@ hero_image: Benchy+Logo.png
 hero_darken: true  
 component_toc: true  
 doc_header: true
-type: tutorial
+type: doc,tutorial
 
 title: Impression 3D avec OrcaSlicer  
 subtitle: Comment imprimer sa pièce avec OrcaSlicer  

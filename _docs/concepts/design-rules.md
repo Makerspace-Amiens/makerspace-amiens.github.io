@@ -6,7 +6,7 @@ hero_darken: true
 image: "page_1_img_20.png"
 component_toc: true
 doc_header: true
-type: course
+type: doc,course
 
 title: Règles de conception et conseils
 subtitle: Concevoir pour l'impression 3D

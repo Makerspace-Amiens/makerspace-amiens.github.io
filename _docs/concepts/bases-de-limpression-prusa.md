@@ -6,7 +6,7 @@ hero_darken: true
 image: "image.png"
 component_toc: true
 doc_header: true
-type: course
+type: doc,course
 
 title: Les Bases de l'impression
 subtitle: Document de Prusa Research

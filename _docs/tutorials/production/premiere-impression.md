@@ -6,7 +6,7 @@ hero_image: opera_PmIMDM8QQi.png
 hero_darken: true
 component_toc: true
 doc_header: true
-type: archive
+type: doc,archive
 
 title: Impression 3D avec CURA sur le serveur du MakerSpace
 subtitle: Comment imprimer sa pièce avec CURA et le serveur du MakerSpace

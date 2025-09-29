@@ -6,7 +6,7 @@ hero_darken: true
 image: "bambulab_p1p.png"
 component_toc: true
 doc_header: true
-type: machine
+type: doc,machine
 
 title: Bambulab P1P
 subtitle: Imprimante 3D FDM rapide

@@ -6,7 +6,7 @@ hero_darken: true
 image: "slide_120_image_4.png"
 component_toc: true
 doc_header: true
-type: course
+type: doc,course
 
 title: Le workflow logiciel
 subtitle: 

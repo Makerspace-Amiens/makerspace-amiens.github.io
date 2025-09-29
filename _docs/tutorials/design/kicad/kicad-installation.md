@@ -11,7 +11,7 @@ title: Kicad (1) - Présentation et Installation
 subtitle: Découvrez Kicad et installez-le !
 description: Dans ce premier tuto, nous allons voir comment vous pouvez installer la version 7 de Kicad.
 tags: Kicad
-type: cao
+type: doc,cao
 
 time: 2
 difficulty: 1

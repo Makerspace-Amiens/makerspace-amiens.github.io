@@ -6,7 +6,7 @@ hero_darken: true
 image: "bambulab_x1c.png"
 component_toc: true
 doc_header: true
-type: machine
+type: doc,machine
 
 title: Bambulab X1C
 subtitle: Imprimante 3D FDM de haute qualité

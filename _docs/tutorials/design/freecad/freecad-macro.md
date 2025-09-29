@@ -11,7 +11,7 @@ title: FreeCAD (3) - Macros
 subtitle: Création et programmation de macros
 description: Documentaiton sur la creation de macros dans freeCAD
 tags: freecad
-type: cao
+type: doc,cao
 
 time: 5
 difficulty: 5

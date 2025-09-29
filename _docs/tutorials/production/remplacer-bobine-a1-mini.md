@@ -6,7 +6,7 @@ hero_image: bambulab_a1_mini.png
 hero_darken: true
 component_toc: true
 doc_header: true
-type: tutorial, replace_filament
+type: doc,tutorial, replace_filament
 
 title: Remplacer une bobine - A1 mini
 subtitle: Comment remplacer une bobine sur une imprimante a1-mini

@@ -6,7 +6,7 @@ hero_image: image.png
 hero_darken: true
 component_toc: true
 doc_header: true
-type: tutorial, insert
+type: doc,tutorial, insert
 
 title: Utiliser des inserts taraudés
 subtitle: Comment intégrer des inserts taraudés dans votre conception

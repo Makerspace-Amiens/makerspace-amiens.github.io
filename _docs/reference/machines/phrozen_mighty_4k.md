@@ -6,7 +6,7 @@ hero_darken: true
 image: "phrozen_sonic_mighty_4k.png"
 component_toc: true
 doc_header: true
-type: machine
+type: doc,machine
 
 title: Phrozen Sonic Mighty 4K
 subtitle: Imprimante 3D Résine LCD

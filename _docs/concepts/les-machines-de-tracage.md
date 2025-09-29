@@ -6,7 +6,7 @@ hero_darken: true
 image: image.png
 component_toc: true
 doc_header: true
-type: tuto
+type: doc,tuto
 
 title: Les types de machines de traçage
 subtitle: Découvrez différents types de machines et de mouvements

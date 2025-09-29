@@ -6,7 +6,7 @@ hero_darken: true
 image: 17HE12-1204S-500x500.jpg
 component_toc: true
 doc_header: true
-type: hardware
+type: doc,hardware
 
 title: Moteur pas-à-pas
 subtitle: Pour se déplacer précisemment

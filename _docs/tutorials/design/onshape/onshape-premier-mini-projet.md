@@ -11,7 +11,7 @@ title: OnShape (3) - Mini-projet
 subtitle: Réaliser un mini-projet sans tutoriel
 description: Dans ce troisième tutoriel, on va créer un support de téléphone simple afin de pouvoir ensuite l'imprimer en 3D.
 tags: onshape
-type: cao, tutorial
+type: doc,cao, tutorial
 
 time: 2
 difficulty: 2

@@ -6,7 +6,7 @@ hero_darken: true
 image: image.png
 component_toc: true
 doc_header: true
-type: software
+type: doc,software
 
 title: Inkscape
 subtitle: Logiciel de dessin vectoriel open-source

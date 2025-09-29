@@ -20,3 +20,14 @@ collections:
     layout: documentation
     image: https://via.placeholder.com/800x600
     show_sidebar: false
+  ressources:
+    output: true
+    layout: documentation
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+  projects:
+    output: true
+    permalink: /projects/:name
+    layout: documentation
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false

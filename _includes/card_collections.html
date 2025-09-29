@@ -1,41 +1,87 @@
-{% assign sorted_docs = site.docs| sort:include.sort %}
+{% comment %}
+  === Cards Include ===
+  Affiche une liste de cartes à partir d'une collection Jekyll.
+
+  Utilisation de base :
+    {% include card_collections.html %}
+
+  Détection automatique :
+    - Si on est sur une page d’une collection (docs, projects, resources…),
+      l’include utilise automatiquement page.collection.
+    - Si on est sur une page hors collection (about.md, index.md…),
+      alors il bascule par défaut sur "docs".
+
+  Paramètres possibles :
+    - collection : permet de forcer une collection (ex. "projects", "resources")
+      Ex. {% include card_collections.html collection="projects" %}
+    - sort : clé utilisée pour trier (ex. "title", "date")
+      Ex. {% include card_collections.html sort="date" %}
+    - type : filtre sur le champ `type` du document
+      Ex. {% include card_collections.html type="tutorial" %}
+    - title : titre affiché au-dessus de la liste
+      Ex. {% include card_collections.html title="Mes tutoriels" %}
+    - description : texte descriptif affiché sous le titre
+      Ex. {% include card_collections.html description="Une sélection de contenus utiles" %}
+
+  Résumé des priorités pour la collection :
+    include.collection > page.collection > "docs"
+{% endcomment %}
+
+{% assign collection_name = include.collection | default: page.collection | default: "docs" %}
+{% assign raw_items = site[collection_name] %}
+
+{% if raw_items %}
+  {% assign sorted_items = raw_items | sort: include.sort %}
+{% else %}
+  {% assign sorted_items = "" %}
+{% endif %}
 
 <div class="column is-fullwidth">
-    <div class="content">
-        {% if include.title %}
-            <h2>{{ include.title }}</h2>
-        {% endif %}
-        {% if include.description %}
-            <p>{{ include.description }}</p>
-        {% endif %}
-    </div>
+  <div class="content">
+    {% if include.title %}
+      <h2>{{ include.title }}</h2>
+    {% endif %}
+    {% if include.description %}
+      <p>{{ include.description }}</p>
+    {% endif %}
+  </div>
 </div>
 
 <div class="columns is-multiline">
-  {% for doc in sorted_docs %}
-  {% if doc.type contains include.type %}
-        <div class="column is-4-desktop is-6-tablet">
-          {% if doc.external_link %} <a href="{{ doc.external_link }}"> {% else %}  <a href="{{ doc.url | relative_url }}"> {% endif %}
-            <div class="card">
-              {% if doc.image %}
-              {% capture image-url %}{{ site.baseurl }}{{ doc.url }}{{ doc.image }}{% endcapture %}
+  {% for item in sorted_items %}
+    {% if include.type == nil or item.type contains include.type %}
+      <div class="column is-4-desktop is-6-tablet">
+        {% if item.external_link %}
+          <a href="{{ item.external_link }}">
+        {% else %}
+          <a href="{{ item.url | relative_url }}">
+        {% endif %}
+          <div class="card">
+            {% if item.image %}
+              {% capture image-url %}{{ site.baseurl }}{{ item.url }}{{ item.image }}{% endcapture %}
               <div class="card-image">
                 <figure class="image is-fullwidth fixed-image">
-                  <img src="{{ image-url }}" alt="{{ doc.title }}" />
+                  <img src="{{ image-url }}" alt="{{ item.title }}" />
                 </figure>
               </div>
-              {% endif %}
-              <div class="card-content" style="background-color: {{ doc.background_color | default: '#FFFFFF' }}">
-                <p class="title is-5">{{ doc.title }}</p>
-                <p class="subtitle is-6">{{ doc.subtitle | truncate: 60 }}</p>
-              </div>
+            {% endif %}
+            <div class="card-content" style="background-color: {{ item.background_color | default: '#FFFFFF' }}">
+              <p class="title is-5">{{ item.title }}</p>
+              <p class="subtitle is-6">{{ item.subtitle | truncate: 60 }}</p>
             </div>
-          </a>
-        </div>
-  {% endif %}
+          </div>
+        </a>
+      </div>
+    {% endif %}
   {% endfor %}
+
+  {% if sorted_items == "" %}
+    <div class="column is-12">
+      <p><em>Aucune collection trouvée pour "{{ collection_name }}".</em></p>
+    </div>
+  {% endif %}
 </div>
 
 <div>
-    <div class="divider is-right"><a href="#">Top ↑</a></div>
+  <div class="divider is-right"><a href="#">Top ↑</a></div>
 </div>
