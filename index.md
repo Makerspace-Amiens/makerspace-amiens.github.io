@@ -10,7 +10,3 @@ show_sidebar: false
 hide_content: false
 hide_footer: true
 ---
-
-{% include chatbot.html 
-   title="Ottonio" 
-%}
