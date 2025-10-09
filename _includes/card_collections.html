@@ -6,13 +6,13 @@
     {% include card_collections.html %}
 
   Détection automatique :
-    - Si on est sur une page d’une collection (docs, projects, resources…),
+    - Si on est sur une page d’une collection (docs, projects, ressources…),
       l’include utilise automatiquement page.collection.
     - Si on est sur une page hors collection (about.md, index.md…),
       alors il bascule par défaut sur "docs".
 
   Paramètres possibles :
-    - collection : permet de forcer une collection (ex. "projects", "resources")
+    - collection : permet de forcer une collection (ex. "projects", "ressources")
       Ex. {% include card_collections.html collection="projects" %}
     - sort : clé utilisée pour trier (ex. "title", "date")
       Ex. {% include card_collections.html sort="date" %}

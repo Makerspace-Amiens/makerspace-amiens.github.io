@@ -6,7 +6,7 @@ hero_darken: true
 image: "artillery_genius.jpg"
 component_toc: true
 doc_header: true
-type: doc,machine
+type: doc, equipment
 
 title: Artillery Genius Pro
 subtitle: Imprimante 3D FDM
