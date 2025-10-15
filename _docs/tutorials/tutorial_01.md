@@ -269,3 +269,91 @@ Vous pouvez intégrer des cartes de collections en indiquant la collection que v
   description="Explorez d'autres tutoriels pour approfondir vos connaissances"
   type="tutorial"
 %}
+
+---
+
+## 8. Tabs
+
+{% capture tab1 %}
+### Introduction
+Bienvenue dans l’onglet d’introduction.
+Tu peux utiliser tout le Markdown que tu veux ici.
+{% endcapture %}
+
+{% capture tab2 %}
+### Détails techniques
+- Étape 1
+- Étape 2
+{% endcapture %}
+
+{% capture tab3 %}
+### Galerie
+![Image](https://picsum.photos/300)
+{% endcapture %}
+
+{% capture tab4 %}
+{%
+  include card_collections.html
+  title="Pour aller plus loin"
+  description="Explorez d'autres tutoriels pour approfondir vos connaissances"
+  type="tutorial"
+%}
+{% endcapture %}
+
+{% include tabs.html
+  id="exemple-tabs"
+  tab_title1="Intro"
+  tab_title2="Détails"
+  tab_title3="Galerie"
+  tab_title4="Cards"
+  tab1=tab1
+  tab2=tab2
+  tab3=tab3
+  tab4=tab4
+%}
+
+
+```liquid
+{% raw %}
+
+{% capture tab1 %}
+### Introduction
+Bienvenue dans l’onglet d’introduction.
+Tu peux utiliser tout le Markdown que tu veux ici.
+{% endcapture %}
+
+{% capture tab2 %}
+### Détails techniques
+- Étape 1
+- Étape 2
+{% endcapture %}
+
+{% capture tab3 %}
+### Galerie
+![Image](https://picsum.photos/300)
+{% endcapture %}
+
+{% capture tab4 %}
+{%
+  include card_collections.html
+  title="Pour aller plus loin"
+  description="Explorez d'autres tutoriels pour approfondir vos connaissances"
+  type="tutorial"
+%}
+{% endcapture %}
+
+{% include tabs.html
+  id="exemple-tabs"
+  tab_title1="Intro"
+  tab_title2="Détails"
+  tab_title3="Galerie"
+  tab_title4="Cards"
+  tab1=tab1
+  tab2=tab2
+  tab3=tab3
+  tab4=tab4
+%}
+
+{% endraw %}
+```
+
