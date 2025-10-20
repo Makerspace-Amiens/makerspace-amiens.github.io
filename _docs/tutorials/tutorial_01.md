@@ -300,7 +300,7 @@ Tu peux utiliser tout le Markdown que tu veux ici.
 %}
 {% endcapture %}
 
-{% include tabs.html
+{% include tabs-test.html
   id="exemple-tabs"
   tab_title1="Intro"
   tab_title2="Détails"
@@ -342,7 +342,7 @@ Tu peux utiliser tout le Markdown que tu veux ici.
 %}
 {% endcapture %}
 
-{% include tabs.html
+{% include tabs-test.html
   id="exemple-tabs"
   tab_title1="Intro"
   tab_title2="Détails"

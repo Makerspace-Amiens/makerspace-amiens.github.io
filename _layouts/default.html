@@ -24,6 +24,7 @@
             {% include cookie-banner.html %}
         {% endif %}
         {% include header.html %}
+        {% include workshop-hero.html %}
         {% unless page.hide_hero %}
             {% include hero.html %}
         {% endunless %}
@@ -46,7 +47,9 @@
                         {% include showcase.html %}
                         {% include sponsors.html %}
                         {% include gallery.html %}
-                        {{ content }}
+                        {% unless page.hide_content %}
+                            {{ content }}
+                        {% endunless %}
                     </div>
                     {% if site.posts and page.show_sidebar %}
                         <div class="column is-3-desktop is-3-tablet is-hidden-mobile">
