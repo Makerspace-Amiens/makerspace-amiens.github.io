@@ -1,39 +1,84 @@
 {% comment %}
   === Cards Include ===
-  Affiche une liste de cartes à partir d'une collection Jekyll.
+  Génère une grille de cartes à partir d'une collection Jekyll (docs, projects, ressources…),
+  avec la possibilité de filtrer ou de composer manuellement des sélections spécifiques.
 
-  Utilisation de base :
-    {% include card_collections.html %}
+  ===================================
+  🧭 UTILISATION GÉNÉRALE
+  ===================================
 
-  Détection automatique :
-    - Si on est sur une page d’une collection (docs, projects, ressources…),
-      l’include utilise automatiquement page.collection.
-    - Si on est sur une page hors collection (about.md, index.md…),
-      alors il bascule par défaut sur "docs".
+  {% include card_collections.html %}
+    → Affiche toutes les cartes de la collection courante (ou "docs" par défaut).
 
-  Paramètres possibles :
-    - collection : permet de forcer une collection (ex. "projects", "ressources")
-      Ex. {% include card_collections.html collection="projects" %}
-    - sort : clé utilisée pour trier (ex. "title", "date")
-      Ex. {% include card_collections.html sort="date" %}
-    - type : filtre sur le champ `type` du document
-      Ex. {% include card_collections.html type="tutorial" %}
-    - title : titre affiché au-dessus de la liste
-      Ex. {% include card_collections.html title="Mes tutoriels" %}
-    - description : texte descriptif affiché sous le titre
-      Ex. {% include card_collections.html description="Une sélection de contenus utiles" %}
+  {% include card_collections.html collection="projects" %}
+    → Force l'utilisation d'une autre collection.
 
-  Résumé des priorités pour la collection :
-    include.collection > page.collection > "docs"
+  {% include card_collections.html sort="title" %}
+    → Trie par un champ particulier (ex. title, date, order…).
+
+  {% include card_collections.html type="tutorial,howto" %}
+    → Filtre les items selon leur type (OU logique).
+
+  {% include card_collections.html tag="fabrication-additive,modelisation-3d" %}
+    → Filtre selon des tags (ET logique).
+
+  {% include card_collections.html type="tutorial" tag="fabrication-additive" %}
+    → Combine les deux (type OU, tag ET).
+
+  ===================================
+  🧩 NOUVEAUTÉ : COMPOSITION MANUELLE
+  ===================================
+
+  {% include card_collections.html
+      items="/projects/otto,/docs/impression-3d,/ressources/laser-settings"
+      title="Sélection du MakerSpace"
+      description="Quelques ressources mises en avant"
+  %}
+
+  → Affiche uniquement les pages listées dans "items", dans l’ordre exact fourni.
+  → Peut piocher dans n’importe quelle collection.
+  → Ignore totalement les filtres type/tag quand "items" est utilisé.
+
+  ===================================
+  ⚙️ PRIORITÉ DES PARAMÈTRES
+  ===================================
+    1️⃣ include.items       → sélection manuelle (ordre strict)
+    2️⃣ include.collection  → collection forcée
+    3️⃣ page.collection     → collection déduite de la page
+    4️⃣ "docs"              → collection par défaut
 {% endcomment %}
 
 {% assign collection_name = include.collection | default: page.collection | default: "docs" %}
 {% assign raw_items = site[collection_name] %}
+{% assign sorted_items = "" %}
 
-{% if raw_items %}
+{%- comment -%}
+  === 1. Sélection manuelle explicite (prioritaire) ===
+{%- endcomment -%}
+{% if include.items %}
+  {% assign manual_items = include.items | split: "," %}
+  {% assign selected_items = "" | split: "" %}
+
+  {% for path in manual_items %}
+    {% assign path = path | strip %}
+    {% assign doc = site.pages | where: "url", path | first %}
+    {% if doc == nil %}
+      {% assign doc = site.docs | where: "url", path | first %}
+    {% endif %}
+    {% if doc == nil %}
+      {% assign doc = site.projects | where: "url", path | first %}
+    {% endif %}
+    {% if doc == nil %}
+      {% assign doc = site.ressources | where: "url", path | first %}
+    {% endif %}
+    {% if doc %}
+      {% assign selected_items = selected_items | push: doc %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign sorted_items = selected_items %}
+{% elsif raw_items %}
   {% assign sorted_items = raw_items | sort: include.sort %}
-{% else %}
-  {% assign sorted_items = "" %}
 {% endif %}
 
 <div class="column is-fullwidth">
@@ -48,8 +93,50 @@
 </div>
 
 <div class="columns is-multiline">
+
+  {% assign filter_types = include.type | default: "" | split: "," %}
+  {% assign filter_tags = include.tag | default: "" | split: "," %}
+
   {% for item in sorted_items %}
-    {% if include.type == nil or item.type contains include.type %}
+    {% assign type_match = false %}
+    {% assign tag_match = true %}
+
+    {%- comment -%}
+      === 2. Filtrage TYPE (OU logique)
+      Si aucun type spécifié → tout passe
+    {%- endcomment -%}
+    {% if filter_types == empty or include.type == nil %}
+      {% assign type_match = true %}
+    {% else %}
+      {% for t in filter_types %}
+        {% assign t = t | strip %}
+        {% if item.type contains t %}
+          {% assign type_match = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {%- comment -%}
+      === 3. Filtrage TAG (ET logique)
+      Si aucun tag spécifié → tout passe
+    {%- endcomment -%}
+    {% if filter_tags == empty or include.tag == nil %}
+      {% assign tag_match = true %}
+    {% else %}
+      {% for tag in filter_tags %}
+        {% assign tag = tag | strip %}
+        {% unless item.tags contains tag %}
+          {% assign tag_match = false %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+
+    {%- comment -%}
+      === 4. Affichage de la carte ===
+      - Si "include.items" est utilisé → type/tag sont ignorés
+      - Sinon, on vérifie les filtres logiques
+    {%- endcomment -%}
+    {% if include.items or (type_match and tag_match) %}
       <div class="column is-4-desktop is-6-tablet">
         {% if item.external_link %}
           <a href="{{ item.external_link }}">
