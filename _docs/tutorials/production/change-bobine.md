@@ -7,6 +7,7 @@ hero_darken: true
 component_toc: true
 doc_header: true
 type: doc,tutorial
+tag: additive-manufacturing
 
 title: Recharger les bobines au MakerSpace
 subtitle: Comment recharger les bobines de filament 3D ROSA - refill 

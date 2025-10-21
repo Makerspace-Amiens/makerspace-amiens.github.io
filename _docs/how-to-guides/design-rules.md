@@ -6,7 +6,8 @@ hero_darken: true
 image: "page_1_img_20.png"
 component_toc: true
 doc_header: true
-type: doc,course
+type: doc, how-to
+tag: additive-manufacturing
 
 title: Règles de conception et conseils
 subtitle: Concevoir pour l'impression 3D

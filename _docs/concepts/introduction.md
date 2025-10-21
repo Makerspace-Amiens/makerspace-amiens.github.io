@@ -6,7 +6,8 @@ hero_darken: true
 image: "slide_17_image_2.png"
 component_toc: true
 doc_header: true
-type: doc,course
+type: doc,concept
+tag: additive-manufacturing
 
 title: Introduction à l'impression 3D
 subtitle: Présentation & Historique

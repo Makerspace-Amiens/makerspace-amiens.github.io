@@ -6,7 +6,8 @@ hero_image: artillery_genius.jpg
 hero_darken: true
 component_toc: true
 doc_header: true
-type: doc,tutorial, replace_filament
+type: doc,tutorial
+tag: additive-manufacturing
 
 title: Remplacer une bobine - Artillery
 subtitle: Comment remplacer une bobine sur une imprimante Artillery

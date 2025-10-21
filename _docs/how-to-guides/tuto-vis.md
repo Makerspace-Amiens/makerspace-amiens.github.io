@@ -6,7 +6,8 @@ hero_image: Vis.jpg
 hero_darken: true
 component_toc: true
 doc_header: true
-type: doc,tutorial
+type: doc, how-to
+tag: additive-manufacturing
 
 title: Assemblage, quel vis choisir ?
 subtitle: Guide de sélection des vis pour le prototypage mécanique

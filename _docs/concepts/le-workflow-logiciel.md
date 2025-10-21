@@ -6,7 +6,8 @@ hero_darken: true
 image: "slide_120_image_4.png"
 component_toc: true
 doc_header: true
-type: doc,course
+type: doc,concept
+tag: fabrication-additive
 
 title: Le workflow logiciel
 subtitle: 

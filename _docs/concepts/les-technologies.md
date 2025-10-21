@@ -6,7 +6,8 @@ hero_darken: true
 image: "slide_88_image_6.jpg"
 component_toc: true
 doc_header: true
-type: doc,course
+type: doc,concept
+tag: additive-manufacturing
 
 title: Les technologies d'impression
 subtitle: 

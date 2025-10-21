@@ -6,7 +6,8 @@ hero_darken: true
 image: "DroopingOverhang1000.png"
 component_toc: true
 doc_header: true
-type: doc,course
+type: doc, how-to
+tag: additive-manufacturing
 
 title: Résolution des Problèmes de Qualité d'Impression 3D
 subtitle: 

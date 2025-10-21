@@ -6,7 +6,8 @@ hero_image: bambulab_p1p.png
 hero_darken: true
 component_toc: true
 doc_header: true
-type: doc,tutorial, replace_filament
+type: doc,tutorial
+tag: additive-manufacturing
 
 title: Remplacer une bobine - P1P
 subtitle: Comment remplacer une bobine sur une imprimante P1P

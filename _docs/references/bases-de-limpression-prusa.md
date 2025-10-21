@@ -6,7 +6,9 @@ hero_darken: true
 image: "image.png"
 component_toc: true
 doc_header: true
-type: doc,course
+type: doc,reference
+tag: additive-manufacturing
+
 
 title: Les Bases de l'impression
 subtitle: Document de Prusa Research

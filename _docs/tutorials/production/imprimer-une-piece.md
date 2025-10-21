@@ -7,6 +7,7 @@ hero_darken: true
 component_toc: true  
 doc_header: true
 type: doc,tutorial
+tag: additive-manufacturing
 
 title: Impression 3D avec OrcaSlicer  
 subtitle: Comment imprimer sa pièce avec OrcaSlicer  
