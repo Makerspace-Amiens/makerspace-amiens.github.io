@@ -28,6 +28,15 @@
         {% unless page.hide_hero %}
             {% include hero.html %}
         {% endunless %}
+        {% if page.graph3d-hero %}
+            {% assign graph_data = site.data[page.graph3d-data] %}
+            {% include graph3d-hero.html
+                id=page.graph3d-id
+                data=graph_data
+                title=page.graph3d-title
+                subtitle=page.graph3d-subtitle
+            %}
+        {% endif %}
         {% include callouts.html %}
         <section class="section">
             <div class="container">

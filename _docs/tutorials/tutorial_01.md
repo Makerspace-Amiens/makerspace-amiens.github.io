@@ -357,3 +357,95 @@ Tu peux utiliser tout le Markdown que tu veux ici.
 {% endraw %}
 ```
 
+---
+
+## 9. 3D Graph
+
+Le graphe est généré grace à un fichier Yaml stocké dans le dossier `_data` :
+
+```yaml
+
+nodes:
+  - id: "MakerSpace"
+    url: ""
+    group: "Lieu"
+    color: "#4fa3ff"          # couleur du texte
+    point_color: "#4fa3ff"    # couleur du point
+    point_size: 10            # taille du point
+    text_size: 2              # taille du texte (nouveau)
+    desc: "Espace de prototypage de UniLaSalle Amiens"
+
+  - id: "Concepts"
+    url: ""
+    point_color: "#ffcc00"
+    point_size: 12
+    text_size: 2
+    desc: "Technologie de fabrication additive"
+
+links:
+  - source: "MakerSpace"
+    target: "Concepts"
+  - source: "MakerSpace"
+    target: "Tutoriels"
+
+```
+
+{% include graph3d-base.html 
+   id="graph-makerspace-2"
+   data=site.data.graph_test
+   transparent=true
+%}
+
+```liquid
+{% raw %}
+
+{% include graph3d-base.html 
+   id="graph-makerspace-2"
+   data=site.data.graph_test
+   transparent=true
+%}
+
+{% endraw %}
+```
+
+Même génération mais sous forme de bandeau avec titre et sous-titre.
+
+{% include graph3d-hero.html 
+   id="graph-makerspace"
+   data=site.data.graph_test
+   title="MakerSpace Network"
+   subtitle="Découvrez les liens entre nos projets et nos machines"
+%}
+
+```liquid
+{% raw %}
+
+{% include graph3d-hero.html 
+   id="graph-makerspace"
+   data=site.data.graph_test
+   title="MakerSpace Network"
+   subtitle="Découvrez les liens entre nos projets et nos machines"
+%}
+
+{% endraw %}
+```
+
+---
+
+Vous pouvez inclure également le graph 3D sous forme de bandeau Hero dans une page "default". Spécifier les paramètres suivants :
+
+```markdown
+---
+title: Fabrication Additive
+subtitle: Ressources pour la fabrication additive au MakerSpace - UniLaSalle Amiens
+layout: default
+
+hide_content: true
+
+graph3d-hero: true
+graph3d-id: graph-makerspace
+graph3d-data: graph_test
+graph3d-title: MakerSpace Network
+graph3d-subtitle: Découvrez les liens entre nos projets et nos machines
+---
+```

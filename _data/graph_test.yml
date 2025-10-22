@@ -1,6 +1,6 @@
 nodes:
   - id: "MakerSpace"
-    url: "/makerspace/"
+    url: ""
     group: "Lieu"
     color: "#4fa3ff"          # couleur du texte
     point_color: "#4fa3ff"    # couleur du point
@@ -8,46 +8,43 @@ nodes:
     text_size: 2              # taille du texte (nouveau)
     desc: "Espace de prototypage de UniLaSalle Amiens"
 
-  - id: "Imprimante 3D"
-    url: "/machines/imprimante-3d/"
-    group: "Machine"
-    color: "#ffcc00"
+  - id: "Concepts"
+    url: ""
     point_color: "#ffcc00"
     point_size: 12
     text_size: 2
     desc: "Technologie de fabrication additive"
 
-  - id: "Découpe Laser"
-    url: "/machines/decoupe-laser/"
-    group: "Machine"
-    color: "#ff6600"
+  - id: "Tutoriels"
+    url: ""
     point_color: "#ff6600"
     point_size: 9
     text_size: 2
     desc: "Découpe et gravure de matériaux"
 
-  - id: "Machines That Draw"
-    url: "/workshops/machines-that-draw/"
-    group: "Workshop"
-    color: "#33ff99"
+  - id: "Guides pratiques"
+    url: ""
     point_color: "#33ff99"
     point_size: 10
     text_size: 2
     desc: "Cours et atelier autour des machines à dessiner"
 
-  - id: "Otto Scribe"
-    url: "/projets/otto-scribe/"
-    group: "Projet"
-    color: "#cc66ff"
+  - id: "Références techniques"
+    url: ""
     point_color: "#cc66ff"
     point_size: 10
     text_size: 2
     desc: "Robot traceur réalisé par les étudiants I2"
 
-  - id: "CAO"
+  - id: "Introduction à l'impression 3D"
     url: "/ressources/cao/"
-    group: "Ressource"
-    color: "#00e0ff"
+    point_color: "#00e0ff"
+    point_size: 8
+    text_size: 2
+    desc: "Conception assistée par ordinateur"
+
+  - id: "Les technologies d'impression 3D"
+    url: "/ressources/cao/"
     point_color: "#00e0ff"
     point_size: 8
     text_size: 2
@@ -55,16 +52,14 @@ nodes:
 
 links:
   - source: "MakerSpace"
-    target: "Imprimante 3D"
+    target: "Concepts"
   - source: "MakerSpace"
-    target: "Découpe Laser"
+    target: "Tutoriels"
   - source: "MakerSpace"
-    target: "Machines That Draw"
-  - source: "Machines That Draw"
-    target: "Otto Scribe"
-  - source: "Otto Scribe"
-    target: "CAO"
-  - source: "CAO"
-    target: "Imprimante 3D"
-  - source: "CAO"
-    target: "Découpe Laser"
+    target: "Guides pratiques"
+  - source: "MakerSpace"
+    target: "Références techniques"
+  - source: "Concepts"
+    target: "Introduction à l'impression 3D"
+  - source: "Concepts"
+    target: "Les technologies d'impression 3D"

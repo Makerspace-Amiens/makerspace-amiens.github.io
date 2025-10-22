@@ -16,6 +16,12 @@ component_toc: false
 
 workshop-content: true
 hide_content: true
+
+graph3d-hero: true
+graph3d-id: graph-makerspace
+graph3d-data: graph_test
+graph3d-title: MakerSpace Network
+graph3d-subtitle: Découvrez les liens entre nos projets et nos machines
 ---
 
 <!-- tab:presentation -->
