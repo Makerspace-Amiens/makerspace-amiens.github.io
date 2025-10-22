@@ -449,3 +449,79 @@ graph3d-title: MakerSpace Network
 graph3d-subtitle: Découvrez les liens entre nos projets et nos machines
 ---
 ```
+
+---
+
+## 10.Skill Graph
+
+Un skill graph simple avec un set de datas :
+
+{% include skill-radar.html
+  id="radar-maker"
+  title="Profil Maker"
+  labels="CAO,Impression 3D,Électronique,Programmation,Documentation"
+
+  label_1="Actuel"
+  values_1="80,85,70,75,90"
+  color_1="#3273dc"
+%}
+
+```liquid
+{% raw %}
+
+{% include skill-radar.html
+  id="radar-maker-1"
+  title="Profil Maker"
+  labels="CAO,Impression 3D,Électronique,Programmation,Documentation"
+
+  label_1="Actuel"
+  values_1="80,85,70,75,90"
+  color_1="#3273dc"
+%}
+
+{% endraw %}
+```
+
+Vous pouvez ajouter jusqu'à 5 set de datas en même temps. Attention aux id : ils ne doivent pas être similaire sur une même page.
+
+{% include skill-radar.html
+  id="radar-maker-2"
+  title="Profil Maker"
+  labels="CAO,Impression 3D,Électronique,Programmation,Documentation"
+
+  label_1="Actuel"
+  values_1="80,5,70,75,90"
+  color_1="#3273dc"
+
+  label_2="Objectif"
+  values_2="90,95,85,0,100"
+  color_2="#48c774"
+
+  label_3="Référence"
+  values_3="70,70,70,70,70"
+  color_3="#ffdd57"
+%}
+
+```liquid
+{% raw %}
+
+{% include skill-radar.html
+  id="radar-maker-2"
+  title="Profil Maker"
+  labels="CAO,Impression 3D,Électronique,Programmation,Documentation"
+
+  label_1="Actuel"
+  values_1="80,5,70,75,90"
+  color_1="#3273dc"
+
+  label_2="Objectif"
+  values_2="90,95,85,0,100"
+  color_2="#48c774"
+
+  label_3="Référence"
+  values_3="70,70,70,70,70"
+  color_3="#ffdd57"
+%}
+
+{% endraw %}
+```
