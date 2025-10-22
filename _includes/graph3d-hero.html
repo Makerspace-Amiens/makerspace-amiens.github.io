@@ -1,0 +1,31 @@
+<!-- _includes/graph3d-hero.html -->
+<section class="hero is-dark is-medium" style="overflow: hidden;">
+  <!-- Texte du hero -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      {% if include.title %}
+        <h1 class="title has-text-white">{{ include.title }}</h1>
+      {% endif %}
+      {% if include.subtitle %}
+        <h2 class="subtitle has-text-white">{{ include.subtitle }}</h2>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Graph 3D sous le texte -->
+  <div class="hero-foot" style="position: relative; width: 100%; height: 400px;">
+    {% include graph3d-base.html 
+       id=include.id
+       data=include.data
+       height="100%"
+       transparent=true
+       zoom=include.zoom
+    %}
+  </div>
+</section>
+
+<style>
+.hero.is-dark .graph3d-container canvas {
+  filter: brightness(0.85); /* assombrit légèrement pour garder la lisibilité */
+}
+</style>
