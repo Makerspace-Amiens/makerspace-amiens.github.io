@@ -50,6 +50,23 @@ hardwares:
   - label: Aucune machine requise
     link: ""
 
+responsible:
+  - name: "Adrien Bracq"
+    link: "mailto:makerspace@unilasalle.fr"
+  - name: "Rémi Lacombe"
+    link: "mailto:makerspace@unilasalle.fr"
+
+capacity: 8
+access_conditions: "Accès libre sur créneaux MakerNight ou sur demande."
+safety_rules: "Formation de niveau 1 obligatoire pour l’utilisation des machines."
+opening_hours: "Lundi au vendredi – 9h à 18h"
+
+typical_activities:
+  - Impression 3D
+  - Conception de prototypes
+  - Formation des étudiants I2
+virtual_tour: "https://makerspace-amiens.fr/tour/printerlab"
+
 todo: 100
 ---
 

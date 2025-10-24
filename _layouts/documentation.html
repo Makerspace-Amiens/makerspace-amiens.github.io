@@ -241,6 +241,98 @@ layout: default
                         </div>
                     </div>
                 {% endif %}
+
+                <!-- Panel block for responsible -->
+                {% if page.responsible %}
+                    <div class="panel-block">
+                        <div class="content">
+                            <p class="is-size-6 has-text-weight-semibold mb-0">Responsable(s) :</p>
+                            <ul class="mt-1">
+                                {% for person in page.responsible %}
+                                    {% if person.link %}
+                                        <li><a href="{{ person.link }}">{{ person.name }}</a></li>
+                                    {% else %}
+                                        <li>{{ person.name }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <!-- Panel block for capacity -->
+                {% if page.capacity %}
+                <a class="panel-block">
+                <span class="panel-icon">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                </span>
+                <b>Capacité d’accueil :&nbsp;</b>{{ page.capacity }} personne{% if page.capacity > 1 %}s{% endif %}
+                </a>
+                {% endif %}
+
+                <!-- Panel block for access conditions -->
+                {% if page.access_conditions %}
+                <div class="panel-block is-block">
+                <div class="content">
+                    <p class="is-size-6 has-text-weight-semibold mb-1">
+                    <span class="icon"><i class="fas fa-door-open" aria-hidden="true"></i></span>
+                    Conditions d’accès :
+                    </p>
+                    <p class="mb-0">{{ page.access_conditions }}</p>
+                </div>
+                </div>
+                {% endif %}
+
+                <!-- Panel block for safety rules -->
+                {% if page.safety_rules %}
+                <div class="panel-block is-block">
+                <div class="content">
+                    <p class="is-size-6 has-text-weight-semibold mb-1">
+                    <span class="icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></span>
+                    Règles de sécurité :
+                    </p>
+                    <p class="mb-0">{{ page.safety_rules }}</p>
+                </div>
+                </div>
+                {% endif %}
+
+                <!-- Panel block for opening hours -->
+                {% if page.opening_hours %}
+                <a class="panel-block">
+                <span class="panel-icon">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                </span>
+                <b>Horaires :&nbsp;</b>{{ page.opening_hours }}
+                </a>
+                {% endif %}
+
+                <!-- Panel block for typical activities -->
+                {% if page.typical_activities %}
+                <div class="panel-block is-block">
+                <div class="content">
+                    <p class="is-size-6 has-text-weight-semibold mb-1">
+                    <span class="icon"><i class="fas fa-cogs" aria-hidden="true"></i></span>
+                    Activités typiques :
+                    </p>
+                    <ul class="mt-1 mb-0">
+                    {% for activity in page.typical_activities %}
+                        <li>{{ activity }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                </div>
+                {% endif %}
+
+                <!-- Panel block for virtual tour -->
+                {% if page.virtual_tour %}
+                <div class="panel-block is-block has-text-centered">
+                <a href="{{ page.virtual_tour }}" target="_blank" class="button is-primary is-outlined is-small">
+                    <span class="icon"><i class="fas fa-vr-cardboard" aria-hidden="true"></i></span>
+                    <span>Visite virtuelle</span>
+                </a>
+                </div>
+                {% endif %}
+
             
                 <!-- Panel block for progress bar (documentation completion) -->
                 {% if page.todo %}
