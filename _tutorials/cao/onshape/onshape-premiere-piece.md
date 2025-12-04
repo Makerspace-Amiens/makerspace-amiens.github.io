@@ -75,7 +75,7 @@ content="La zone 1 est dédiée à la vue 3D et 2D de votre pièce. En vue 3D vo
 Vous avez également accès au **cube de navigation** vous permettant de gérer votre affichage et son orientation très rapidement.
 
 ![](2022-09-07-14-23-00.png)" 
-image="2022-09-07-14-17-54.png.png" %}
+image="2022-09-07-14-17-54.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
@@ -135,6 +135,12 @@ content="Allez dans la barre d'outils et cliquez sur **Rectangle par sommets**
 
 Dessinez rectangle **autour du point d'origine** comme montré dans l'image en cliquant une première fois pour définir le premier sommet puis une seconde fois pour déterminer le second sommet. **Ne pas faire de clic and pull** (cliquer-tirer)" 
 image="2022-09-07-14-55-35.png" %}
+
+{% include message.html
+title="Astuce" 
+message="Dans Onshape, la **sélection multiple** fonctionne **automatiquement** (pas besoin d'appuyer sur MAJ): cliquez successivement sur plusieurs éléments pour les sélectionner tous.  
+Pour tout désélectionner d’un seul coup, appuyez simplement sur la touche **Espace**." 
+status="is-warning" %}
 
 {% include step-tuto.html 
 greyBackground = false
