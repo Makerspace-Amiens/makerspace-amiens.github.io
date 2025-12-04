@@ -6,8 +6,8 @@ email: adrien.bracq@unilasalle.fr
 description: >
   Hub Makerspace Unilasalle Amiens
 baseurl: ""
-imgurl : "/img"
-editurl : "https://gitlab.com/makerspace-unilasalle/campus-amiens/hub-amiens/-/edit/master"
+imgurl: "/img"
+editurl: "https://gitlab.com/makerspace-unilasalle/campus-amiens/hub-amiens/-/edit/master"
 
 url: "https://makerspace-amiens.fr"
 permalink: pretty
@@ -50,7 +50,6 @@ exclude:
   - vendor/ruby/
   - archives/
 
-
 livereload: true
 
 sass:
@@ -60,14 +59,12 @@ sass:
 #google_analytics: UA-code-here
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       show_sidebar: true
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:

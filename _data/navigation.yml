@@ -1,79 +1,51 @@
-- name: Informations
-  link: /pages/informations
-- name: Blog
-  link: /blog
-- name: Les projets
+- name: Le MakerSpace
   link: 
   dropdown:
-    - name: Robotique - 2024
-      link: /pages/projets/robotique-2024
-    - name: Projets I3 - 2024
-      link: /pages/projets/projets-2024
-    - name: Projets I3 - 2023
-      link: /pages/projets/projets-2023
-    - name: Projets I3 - 2022
-      link: /pages/projets/projets-2022
-    - name: GEB I2 - 2024
-      link: /pages/projets/projets-geb
-    - name: ITEC I2 - 2024
-      link: /pages/projets/projets-I2-2024
-- name: Materiel
-  link: /pages/machines
-- name: Tutoriels
+    - name: Informations
+      link: /pages/informations
+    - name: Materiel
+      link: /pages/machines
+    - name: ✨Nouveaux Laboratoires✨
+      link: /pages/new-lab
+    - name: 🎉Journée des projets🎉
+      link: /pages/journee-des-projets
+- name: Nos Ressources
   link: 
   dropdown:
     - name: Conception 3D
       link: /pages/tutoriels-cao
     - name: Conception 3D (English)
       link: /pages/tutoriels-cao-en
-    - name: Impression 3D
-      link: /pages/tutoriels-impression-3d
-- name: Les outils
+    - name: 🚧 Comment documenter & partager
+      link: https://makerspace-amiens.fr/art-of-documentation/
+    - name: Outils et ressources externes
+      link: /pages/external-tools
+    - name: Fabrication Additive
+      link: https://makerspace-amiens.fr/fab-additive/
+    - name: 🚧 Design Electronique
+      link: https://makerspace-amiens.fr/electronic-design/
+    - name: Le Robot Otto
+      link: https://makerspace-amiens.fr/otto-mks/
+    - name: Machine That Draws
+      link: https://makerspace-amiens.fr/machines-that-draws/
+    - name: 🏰 Medieval Challenge
+      link: https://makerspace-amiens.fr/medieval-challenge
+- name: Les projets 
   link: 
   dropdown:
-    - name: Centre de documentation
-      link: https://cloudlasalle.sharepoint.com/sites/centre-de-documentation
-    - name: Dimensionnement de moteurs
-      link: /pages/calculateur-moteur-robot
-    - name: Simulateur Arduino
-      link: https://wokwi.com
-    - name: Generateur d'effet NeoPixel
-      link: https://adrianotiger.github.io/Neopixel-Effect-Generator/
-    - name: Build List
-      link: https://buildlist.org
-    - name: With Diode
-      link: https://www.withdiode.com
-    - name: CAD Assistant
-      link: https://www.opencascade.com/products/cad-assistant/
-    - name: Pinion KiCAD
-      link: https://yaqwsx.github.io/Pinion/
-    - name: sheetplus Ai
-      link: https://sheetplus.ai
-    - name: 3D print Quality Troubleshooting
-      link: https://www.simplify3d.com/resources/print-quality-troubleshooting/
-    - name: Trace Pixels To Vectors in Full Color
-      link: https://vectorizer.ai
-    - name: Calcul de couple pour systèmes 
-      link: https://www.nidec.com/en/product/calc/torque/
-    - name: Motiongen.io - Simulation de mécanismes
-      link: https://motiongen.io/app
-    - name: PDF Sam - utilitaire pour éditer des PDF
-      link: https://pdfsam.org
-    - name: Signature PDF
-      link: https://pdf.24eme.fr/signature
-    - name: RoboCup kit
-      link: https://robot-soccer-kit.github.io
-    - name: Tutos de CAO FreeCAD
-      link: https://lachiver.fr/Accueil/co/siteWeb.html
-    - name: Wurth Elektronik tool
-      link: https://redexpert.we-online.com/we-redexpert/en/#/home
-    - name: Learn Git !
-      link: https://learngitbranching.js.org
-    - name: RPM Visualizer
-      link: https://kowus.github.io/rpmVisualizer/index.html
-    - name: Optimize GLB
-      link: https://www.glb-optimizer.com/
-    - name: Guide des pratiques écologiques dans les labs
-      link: img/pdf/Guide des pratiques écologiques (charlie 01-06-24).pdf
-    - name: Générateur QR Code -> 3D
-      link: https://printer.tools/qrcode2stl
+    - name: Robotique - 2023-24
+      link: /pages/projets/robotique-2024
+    - name: Projets I1 - 2024-25
+      link: /pages/projets/projets-I1-2024-25
+    - name: GEB I2 - 2023-24
+      link: /pages/projets/projets-geb
+    - name: ITEC I2 - 2023-24
+      link: /pages/projets/projets-I2-2024
+    - name: Projets I3 - 2025
+      link: /pages/projets/projets-2025
+    - name: Projets I3 - 2023-24
+      link: /pages/projets/projets-2024
+    - name: Projets I3 - 2022-23
+      link: /pages/projets/projets-2023
+    - name: Projets I3 - 2021-22
+      link: /pages/projets/projets-2022

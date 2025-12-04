@@ -51,7 +51,7 @@ image="2022-09-07-11-54-18.png" %}
 {% include step-tuto.html 
 greyBackground = true
 title="ETAPE 3"
-content="Vous devriez être rediriger directement vers la page principal de votre éditeur de pièce. Vérifiez que vous pouvez naviguer correctement dans votre espace 3D avec votre souris avant de continuer." 
+content="Vous devriez être redirigé directement vers la page principal de votre éditeur de pièce. Vérifiez que vous pouvez naviguer correctement dans votre espace 3D avec votre souris avant de continuer." 
 image="2022-09-07-11-56-38.png" %}
 
 ## Tour d'horizon de la fenêtre

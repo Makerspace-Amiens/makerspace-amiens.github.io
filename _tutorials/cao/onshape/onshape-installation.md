@@ -45,14 +45,25 @@ Onshape permet aux équipes de collaborer sur une seule conception partagée, de
 {% include step-tuto.html 
 greyBackground = false
 title="ETAPE 1"
-content="Aller sur la page [www.onshape.com/en/education](https://www.onshape.com/en/education) ou en cliquant sur le bouton **Get onshape for education** sur [](www.onshape.com)." 
+content="Allez sur la page [www.onshape.com/en/education](https://www.onshape.com/en/education) ou en cliquant sur le bouton **Create EDU account**." 
 image="2022-06-29-16-33-25.png" %}
 
 {% include step-tuto.html 
 greyBackground = true
 title="ETAPE 2"
-content="Remplissez le formulaire ci-dessous afin de créer votre compte éducation. **Attention** : utilisez votre adresse *unilasalle* pour remplir le formulaire." 
-image="2022-06-29-16-39-55.png" %}
+content="Remplissez le formulaire afin de créer votre compte éducation. **Attention** : utilisez votre adresse **unilasalle** pour remplir le formulaire. Selectionnez **Student** puis **University**.
+Remplissez les champs suivant comme indiqué :
+- School Name : UniLaSalle
+- School website URL : https://www.unilasalle-amiens.fr
+- Graduation Year : Votre année de diplomation
+- Area of Study : Energy and Digital Systems Engineering
+- What are you using Onshape for ? : CAD training and rapid prototyping
+
+Validez les cases à cocher et cliquez sur **Complete Sign Up**.
+"
+image="opera_5AJKsm7hmE.png"
+image_2="opera_rL9E6nWSpZ.png"
+image_3="opera_amXm0y9ETg.png" %}
 
 {% include step-tuto.html 
 greyBackground = false
