@@ -83,7 +83,7 @@ image="2022-06-29-16-45-42.png" %}
 {% include step-tuto.html 
 greyBackground = true
 title="ETAPE 1"
-content="Au premier lacement vous allez avoir besoins de paramétrer votre compte. Je vous conseil de passer vos unité au format **Millimètre, degrés, gramme** dés le début afin d'éviter des surprises par la suite." 
+content="Au premier lancement vous allez avoir besoins de paramétrer votre compte. Je vous conseil de passer vos unité au format **Millimètre, degrés, gramme** dés le début afin d'éviter des surprises par la suite." 
 image="2022-06-29-16-48-11.png" %}
 
 {% include step-tuto.html 
