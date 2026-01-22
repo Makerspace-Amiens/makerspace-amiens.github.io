@@ -23,6 +23,13 @@ items:
     call_to_action_name: Voir les projets
     call_to_action_link: /pages/projets/projets
 
+  - title: Otto-Nio
+    description: >
+      Discutez et faites vous guider grâce à notre agent Otto-Nio !
+    icon: fa-robot
+    call_to_action_name: Parlez avec Otto-Nio
+    call_to_action_link: https://ragarenn.eskemm-numerique.fr/sso/makerspace@unilasalleamiens/app
+
   - title: Visite virtuelle
     description: >
       Découvrez le MakerSpace depuis chez vous !
