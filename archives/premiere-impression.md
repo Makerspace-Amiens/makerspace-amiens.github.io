@@ -3,7 +3,7 @@ layout: tutorial
 image: opera_PmIMDM8QQi.png
 hide_hero: false
 hero_image: opera_PmIMDM8QQi.png
-hero_darken: true
+hero_darken: true 
 component_toc: true
 background_color: '#f7f4ed'
 
