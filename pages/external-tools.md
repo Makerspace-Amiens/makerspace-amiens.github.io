@@ -14,9 +14,21 @@ description="Le centre de documentation d'UniLaSalle"
 %}
 
 {% include linkpreview_manual.html 
+url="https://ocw.mit.edu/collections/introductory-programming/" 
+title="MIT - Cours de programmation" 
+description="Cours d'apprentissage de la programmation par le MIT" 
+%}
+
+{% include linkpreview_manual.html 
 url="/pages/calculateur-moteur-robot" 
 title="Dimensionnement de moteurs" 
 description="Outil de calcul pour le dimensionnement des moteurs" 
+%}
+
+{% include linkpreview_manual.html 
+url="https://bumpmesh.com" 
+title="BumpMesh - Ajouter de la texture" 
+description="Ajouter facilement une texture sur des pièces en 3D" 
 %}
 
 {% include linkpreview_manual.html 
