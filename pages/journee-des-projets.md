@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Journée des Projets – 4 juin 2025
+title: Journée des Projets – 3 juin 2026
 subtitle: Une journée pour découvrir, partager et célébrer l’innovation étudiante
 description: Une journée pour découvrir, partager et célébrer l’innovation étudiante
 tags: 
@@ -58,27 +58,25 @@ Les étudiants partent d’une feuille blanche. Aucun plan imposé, aucun modèl
 
 Le premier semestre est dédié au proof of concept (POC), avec la validation des principes mécaniques et des premières traces dessinées. Le second semestre est orienté vers l’optimisation, la création graphique et la finalisation du système.
 
-Le jour de l’exposition, ces machines seront en **fonctionnement continu**, produisant en temps réel des dessins uniques. Chaque œuvre, chaque trait, est une manifestation directe de l’ingéniosité technique des étudiants et de leur capacité à transformer des idées abstraites en objets concrets, fonctionnels, et parfois même poétiques.
+Le jour de l’exposition, ces machines seront en **fonctionnement continu**, produisant en temps réel des dessins uniques. Chaque œuvre est une manifestation de l’ingéniosité technique des étudiants et de leur capacité à transformer des idées abstraites en objets concrets, fonctionnels, et parfois même poétiques.
 
 ---
 
-## I3 – Projets pluridisciplinaires
+## I3 – PuzzleBot
 ![alt text](<Titre 3.png>)
 
-Les étudiants de 3e année présenteront [leurs projets pluridisciplinaires](https://makerspace-amiens.fr/pages/projets/projets-2025/) menés tout au long du second semestre dans le cadre du programme I3. Ces projets sont conçus pour mobiliser les compétences acquises dans les différents domaines de la formation : électronique, mécanique, informatique, conception, gestion de projet, et communication technique.
+En troisième année, les étudiants relèvent un défi technique commun à travers le projet **PuzzleBot**. L’objectif est de concevoir un système robotique capable de **résoudre automatiquement un puzzle physique**, en mobilisant l’ensemble des compétences acquises au cours de leur formation.
 
-Chaque équipe a défini **un sujet original**, souvent en lien avec des problématiques concrètes, puis a assuré toutes les étapes du développement, de l’**analyse du besoin** à la réalisation d’un **prototype fonctionnel**.
+PuzzleBot propose un **cadre commun**, tout en laissant une grande liberté dans les approches techniques. Chaque équipe développe ainsi sa propre solution pour répondre à une même problématique, en combinant électronique, mécanique, informatique et algorithmique.
 
-Les projets abordent une grande diversité de thématiques, comme :
+Le projet implique la conception d’un système intégrant :
+- un système mécanique de **manipulation physique** permettant d’interagir avec le puzzle.
+- un dispositif de **détection et d’analyse des pièces**,
+- jusqu'à une **logique de résolution algorithmique** !
 
-- **la robotique autonome** (robots de navigation, bras manipulateurs)
-- **la domotique** et les **objets connectés** (capteurs intelligents, contrôle d’environnement)
-- le **développement logiciel** (applications mobiles, outils de visualisation)
-- ou encore des dispositifs techniques innovants mêlant IA, traitement de signal et mécatronique.
+Lors de la Journée des Projets, chaque groupe disposera d’un espace pour présenter ses travaux au public : **présentation du prototype**, **démonstration en direct**, supports techniques et documentations seront au rendez-vous. C’est l’occasion pour les visiteurs d’échanger directement avec les étudiants sur leurs choix techniques, les difficultés rencontrées, les résultats obtenus et les suites envisageables pour leurs projets.
 
-Lors de la Journée des Projets, chaque groupe disposera d’un espace pour présenter ses travaux au public : **maquettes fonctionnelles**, **démonstrations en direct**, supports techniques et documentations seront au rendez-vous. C’est l’occasion pour les visiteurs d’échanger directement avec les étudiants sur leurs choix techniques, les difficultés rencontrées, les résultats obtenus et les suites envisageables pour leurs projets.
-
-Ces projets incarnent **l’esprit d’ingénierie collaboratif** porté par UniLaSalle, avec des réalisations concrètes qui témoignent de la capacité des étudiants à innover, à résoudre des problèmes complexes et à travailler efficacement en équipe.
+Ce projet incarne **l’esprit d’ingénierie collaboratif** porté par UniLaSalle, avec des réalisations concrètes qui témoignent de la capacité des étudiants à innover, à résoudre des problèmes complexes et à travailler efficacement en équipe.
 
 ---
 
@@ -113,7 +111,7 @@ Un espace sera également dédié à l’entrepreneuriat étudiant, avec un stan
 
 ## Infos pratiques
 
-- **Date** : mercredi 4 juin 2025
+- **Date** : mercredi 3 juin 2026
 - **Lieu** : [UniLaSalle Amiens](https://www.unilasalle-amiens.fr) – 14 Quai de la Somme, 80080 Amiens
 - **Horaires** : de 10h à 17h
 
