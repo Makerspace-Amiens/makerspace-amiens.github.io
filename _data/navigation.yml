@@ -3,51 +3,9 @@
   dropdown:
     - name: Informations
       link: /pages/informations
-    - name: Materiel
-      link: /pages/machines
-    - name: ✨Nouveaux Laboratoires✨
-      link: /pages/new-lab
     - name: 🎉Journée des projets🎉
       link: /pages/journee-des-projets
 - name: Nos Ressources
-  link: 
-  dropdown:
-    - name: Conception 3D
-      link: /pages/tutoriels-cao
-    - name: Conception 3D (English)
-      link: /pages/tutoriels-cao-en
-    - name: 🚧 Comment documenter & partager
-      link: https://makerspace-amiens.fr/art-of-documentation/
-    - name: Outils et ressources externes
-      link: /pages/external-tools
-    - name: Fabrication Additive
-      link: https://makerspace-amiens.fr/fab-additive/
-    - name: 🚧 Design Electronique
-      link: https://makerspace-amiens.fr/electronic-design/
-    - name: 🤖​ Le Robot Otto
-      link: https://makerspace-amiens.fr/otto-mks/
-    - name: 🧩 Puzzle Bot
-      link: https://makerspace-amiens.fr/puzzle-bot/
-    - name: ✏️ Machine That Draws
-      link: https://makerspace-amiens.fr/machines-that-draws/
-    - name: 🏰 Medieval Challenge
-      link: https://makerspace-amiens.fr/medieval-challenge
+  link: https://doc.makerspace-amiens.fr
 - name: Les projets 
-  link: 
-  dropdown:
-    - name: Robotique - 2023-24
-      link: /pages/projets/robotique-2024
-    - name: Projets I1 - 2024-25
-      link: /pages/projets/projets-I1-2024-25
-    - name: GEB I2 - 2023-24
-      link: /pages/projets/projets-geb
-    - name: ITEC I2 - 2023-24
-      link: /pages/projets/projets-I2-2024
-    - name: Projets I3 - 2025
-      link: /pages/projets/projets-2025
-    - name: Projets I3 - 2023-24
-      link: /pages/projets/projets-2024
-    - name: Projets I3 - 2022-23
-      link: /pages/projets/projets-2023
-    - name: Projets I3 - 2021-22
-      link: /pages/projets/projets-2022
+  link: https://makerspace-amiens.fr/makerspace-projects/
